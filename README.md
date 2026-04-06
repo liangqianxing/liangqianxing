@@ -27,8 +27,14 @@ Building tools that make research and development easier.
 
 <div align="center">
 
-<img height="160" src="https://github-readme-stats.vercel.app/api?username=liangqianxing&show_icons=true&theme=transparent&hide_border=true&title_color=38BDF8&icon_color=38BDF8&text_color=94a3b8&bg_color=00000000" />
-<img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=liangqianxing&layout=compact&theme=transparent&hide_border=true&title_color=38BDF8&text_color=94a3b8&bg_color=00000000&langs_count=6" />
+<img height="160" src="https://github-readme-stats.vercel.app/api?username=liangqianxing&show_icons=true&theme=transparent&hide_border=true&title_color=38BDF8&icon_color=38BDF8&text_color=94a3b8&bg_color=00000000&cache_seconds=86400" />
+<img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=liangqianxing&layout=compact&theme=transparent&hide_border=true&title_color=38BDF8&text_color=94a3b8&bg_color=00000000&langs_count=6&cache_seconds=86400" />
+
+</div>
+
+<div align="center">
+
+[![GitHub Streak](https://streak-stats.demolab.com?user=liangqianxing&theme=transparent&hide_border=true&ring=38BDF8&fire=38BDF8&currStreakLabel=38BDF8&sideLabels=94a3b8&dates=94a3b8&currStreakNum=e2e8f0&sideNums=e2e8f0)](https://git.io/streak-stats)
 
 </div>
 
