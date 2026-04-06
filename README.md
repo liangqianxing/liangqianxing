@@ -4,8 +4,6 @@
 
 <br/>
 
-**软件工程在读 · 新疆大学 → 西湖大学 NLP 实验室访问学生**
-
 Building tools that make research and development easier.
 
 [![Blog](https://img.shields.io/badge/Blog-liangqianxing.github.io-38BDF8?style=flat-square&logo=hexo&logoColor=white)](https://liangqianxing.github.io)
