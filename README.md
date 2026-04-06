@@ -27,8 +27,8 @@ Building tools that make research and development easier.
 
 <div align="center">
 
-<img height="160" src="https://github-readme-stats.vercel.app/api?username=liangqianxing&show_icons=true&theme=transparent&hide_border=true&title_color=38BDF8&icon_color=38BDF8&text_color=94a3b8&bg_color=00000000&cache_seconds=86400" />
-<img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=liangqianxing&layout=compact&theme=transparent&hide_border=true&title_color=38BDF8&text_color=94a3b8&bg_color=00000000&langs_count=6&cache_seconds=86400" />
+<img height="160" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=liangqianxing&theme=transparent" />
+<img height="160" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=liangqianxing&theme=transparent" />
 
 </div>
 
