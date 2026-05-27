@@ -1,10 +1,10 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=38BDF8&center=true&vCenter=true&width=720&lines=Hi%2C+I'm+Gu+EnHao+%F0%9F%91%8B;%E5%8F%A4%E6%81%A9%E8%B1%AA+%7C+Software+Engineering;AI+Infra+%7C+LLM+%7C+Backend+%7C+Open+Source;Building+tools+for+research+and+development" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=38BDF8&center=true&vCenter=true&width=720&lines=Hi%2C+I'm+Gu+EnHao+%F0%9F%91%8B;%E5%8F%A4%E6%81%A9%E8%B1%AA+%7C+Software+Engineering;Full-Stack+Developer+%40+Meituan;AI+Infra+%7C+LLM+Agents+%7C+Backend+%7C+Open+Source" alt="Typing SVG" />
 
 <br/>
 
-### Building tools that make research and development easier.
+### Full-Stack Developer @ Meituan · Building tools that make research and development easier.
 
 [![Blog](https://img.shields.io/badge/Blog-liangqianxing.github.io-38BDF8?style=flat-square&logo=hexo&logoColor=white)](https://liangqianxing.github.io)
 [![GitHub followers](https://img.shields.io/github/followers/liangqianxing?style=flat-square&color=38BDF8&labelColor=1e293b)](https://github.com/liangqianxing?tab=followers)
@@ -16,11 +16,21 @@
 
 ## 👋 About Me
 
-- 🎓 Software Engineering student, focusing on AI infrastructure and backend systems.
+- 💼 Full-Stack Developer at Meituan, building production-facing web and backend systems.
+- 🎓 Software Engineering student, focusing on AI infrastructure, backend systems, and product engineering.
 - 🤖 Interested in LLM agents, RAG, inference acceleration, distributed systems, and generative models.
 - 🧠 Currently studying source code, system design, deep learning systems, and production-grade AI engineering.
 - ✍️ I write technical notes and interview guides on my blog: [liangqianxing.github.io](https://liangqianxing.github.io).
 - 🛠️ I enjoy building tools that turn research ideas into usable products.
+
+---
+
+## 💼 Experience
+
+| Time | Organization | Role | Type |
+|---|---|---|---|
+| 2026.05 – Present | Meituan | Full-Stack Developer | Full-time |
+| 2026.04 – 2026.05 | vivo | Agent Engineer | Internship |
 
 ---
 
@@ -42,7 +52,7 @@
 |---|---|
 | AI Infra | LLM serving, memory systems, RAG pipelines, evaluation, reliability |
 | Deep Learning Systems | Autograd, PyTorch internals, GPU inference, TensorRT / vLLM notes |
-| Backend Engineering | FastAPI, databases, caching, distributed systems, observability |
+| Full-Stack Engineering | React / Next.js, Node.js, FastAPI, databases, caching, observability |
 | Generative Models | Diffusion, Flow Matching, DiT, multimodal generation |
 | Open Source | Developer tools, source-code reading, technical writing |
 
