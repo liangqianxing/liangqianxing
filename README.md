@@ -31,6 +31,7 @@
 |---|---|---|---|
 | 2026.05 – Present | Meituan | Full-Stack Developer | Full-time |
 | 2026.04 – 2026.05 | vivo | Agent Engineer | Internship |
+| 2025.12 – 2026.03 | Westlake University | Visit Student, NLP Lab | Internship |
 
 ---
 
