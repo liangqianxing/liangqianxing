@@ -96,18 +96,6 @@
 
 ---
 
-## 🚀 Focus Areas
-
-| Area | What I Care About |
-|---|---|
-| AI Infra | LLM serving, memory systems, RAG pipelines, evaluation, reliability |
-| Deep Learning Systems | Autograd, PyTorch internals, GPU inference, TensorRT / vLLM notes |
-| Full-Stack Engineering | React / Next.js, Node.js, FastAPI, databases, caching, observability |
-| Generative Models | Diffusion, Flow Matching, DiT, multimodal generation |
-| Open Source | Developer tools, source-code reading, technical writing |
-
----
-
 ## 📌 Featured Projects
 
 | Project | Description | Link |
