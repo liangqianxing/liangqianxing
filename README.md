@@ -16,12 +16,43 @@
 
 ## 👋 About Me
 
-- 💼 Full-Stack Developer at Meituan, building production-facing web and backend systems.
-- 🎓 Software Engineering student, focusing on AI infrastructure, backend systems, and product engineering.
-- 🤖 Interested in LLM agents, RAG, inference acceleration, distributed systems, and generative models.
-- 🧠 Currently studying source code, system design, deep learning systems, and production-grade AI engineering.
-- ✍️ I write technical notes and interview guides on my blog: [liangqianxing.github.io](https://liangqianxing.github.io).
-- 🛠️ I enjoy building tools that turn research ideas into usable products.
+<table>
+  <tr>
+    <td valign="top" width="50%">
+      <h4>💼 Work</h4>
+      Full-Stack Developer at <b>Meituan</b><br/>
+      Building production-facing web & backend systems
+    </td>
+    <td valign="top" width="50%">
+      <h4>🎓 Study</h4>
+      Software Engineering student<br/>
+      Focus: AI Infrastructure · Backend · Product Engineering
+    </td>
+  </tr>
+  <tr>
+    <td valign="top">
+      <h4>🤖 Interests</h4>
+      LLM Agents · RAG · Inference Acceleration<br/>
+      Distributed Systems · Generative Models
+    </td>
+    <td valign="top">
+      <h4>🧠 Currently</h4>
+      Source code reading · System Design<br/>
+      Deep Learning Systems · Production AI Engineering
+    </td>
+  </tr>
+  <tr>
+    <td valign="top">
+      <h4>✍️ Writing</h4>
+      Technical notes & interview guides<br/>
+      <a href="https://liangqianxing.github.io">liangqianxing.github.io</a>
+    </td>
+    <td valign="top">
+      <h4>🛠️ Building</h4>
+      Tools that turn research ideas into usable products
+    </td>
+  </tr>
+</table>
 
 ---
 
