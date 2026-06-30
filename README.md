@@ -14,48 +14,6 @@
 
 ---
 
-## 👋 About Me
-
-<table>
-  <tr>
-    <td valign="top" width="50%">
-      <h4>💼 Work</h4>
-      Full-Stack Developer at <b>Meituan</b><br/>
-      Building production-facing web & backend systems
-    </td>
-    <td valign="top" width="50%">
-      <h4>🎓 Study</h4>
-      Software Engineering student<br/>
-      Focus: AI Infrastructure · Backend · Product Engineering
-    </td>
-  </tr>
-  <tr>
-    <td valign="top">
-      <h4>🤖 Interests</h4>
-      LLM Agents · RAG · Inference Acceleration<br/>
-      Distributed Systems · Generative Models
-    </td>
-    <td valign="top">
-      <h4>🧠 Currently</h4>
-      Source code reading · System Design<br/>
-      Deep Learning Systems · Production AI Engineering
-    </td>
-  </tr>
-  <tr>
-    <td valign="top">
-      <h4>✍️ Writing</h4>
-      Technical notes & interview guides<br/>
-      <a href="https://liangqianxing.github.io">liangqianxing.github.io</a>
-    </td>
-    <td valign="top">
-      <h4>🛠️ Building</h4>
-      Tools that turn research ideas into usable products
-    </td>
-  </tr>
-</table>
-
----
-
 ## 💼 Experience
 
 <table>
