@@ -27,11 +27,29 @@
 
 ## 💼 Experience
 
-| Time | Organization | Role | Type |
-|---|---|---|---|
-| 2026.05 – Present | Meituan | Full-Stack Developer | Internship |
-| 2026.04 – 2026.05 | vivo | Agent Engineer | Internship |
-| 2025.12 – 2026.03 | Westlake University | Visit Student, NLP Lab | Internship |
+<table>
+  <tr>
+    <td align="center" width="72">
+      <img src="https://raw.githubusercontent.com/liangqianxing/liangqianxing.github.io/main/public/logos/meituan.svg" width="42" height="42" alt="Meituan" />
+    </td>
+    <td>
+      <b>Meituan 美团</b><br/>
+      Full-Stack Developer &nbsp;·&nbsp; Internship<br/>
+      <sub>🗓 2026.05 – Present</sub>
+    </td>
+  </tr>
+  <tr><td colspan="2"><br/></td></tr>
+  <tr>
+    <td align="center" width="72">
+      <img src="https://raw.githubusercontent.com/liangqianxing/liangqianxing.github.io/main/public/logos/westlake.png" width="42" height="42" alt="Westlake University" />
+    </td>
+    <td>
+      <b>Westlake University 西湖大学</b><br/>
+      Visit Student, NLP Lab &nbsp;·&nbsp; Internship<br/>
+      <sub>🗓 2025.12 – 2026.03</sub>
+    </td>
+  </tr>
+</table>
 
 ---
 
