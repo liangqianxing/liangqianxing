@@ -8,6 +8,9 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write
+
 jobs:
   generate:
     runs-on: ubuntu-latest
@@ -19,6 +22,115 @@ jobs:
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+
+      - name: Generate profile stats cards
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require("fs");
+
+            const username = context.repo.owner;
+            const userResponse = await github.rest.users.getByUsername({ username });
+            const user = userResponse.data;
+            const repos = await github.paginate(github.rest.repos.listForUser, {
+              username,
+              type: "owner",
+              sort: "updated",
+              per_page: 100,
+            });
+
+            const sourceRepos = repos.filter((repo) => !repo.fork && !repo.archived);
+            const totalStars = sourceRepos.reduce((sum, repo) => sum + repo.stargazers_count, 0);
+            const totalForks = sourceRepos.reduce((sum, repo) => sum + repo.forks_count, 0);
+            const languageBytes = {};
+
+            for (const repo of sourceRepos) {
+              try {
+                const languageResponse = await github.rest.repos.listLanguages({
+                  owner: username,
+                  repo: repo.name,
+                });
+                for (const [language, bytes] of Object.entries(languageResponse.data)) {
+                  languageBytes[language] = (languageBytes[language] || 0) + bytes;
+                }
+              } catch (error) {
+                core.warning(`Could not read languages for ${repo.name}: ${error.message}`);
+              }
+            }
+
+            const languages = Object.entries(languageBytes)
+              .sort((a, b) => b[1] - a[1])
+              .slice(0, 6);
+            const totalLanguageBytes = languages.reduce((sum, [, bytes]) => sum + bytes, 0) || 1;
+
+            const escapeXml = (value) =>
+              String(value)
+                .replace(/&/g, "&amp;")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;")
+                .replace(/"/g, "&quot;");
+
+            const formatNumber = (value) => new Intl.NumberFormat("en-US").format(value);
+
+            const cardShell = (title, body, width = 495, height = 195) => `
+            <svg width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="${escapeXml(title)}">
+              <style>
+                .title { fill: #38BDF8; font: 700 18px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+                .label { fill: #94A3B8; font: 500 13px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+                .value { fill: #E2E8F0; font: 700 24px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+                .small { fill: #CBD5E1; font: 600 12px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+              </style>
+              <rect x="0.5" y="0.5" width="${width - 1}" height="${height - 1}" rx="14" fill="#0F172A" stroke="#1E293B"/>
+              <text x="24" y="36" class="title">${escapeXml(title)}</text>
+              ${body}
+            </svg>`.trim();
+
+            const statItems = [
+              ["Public Repos", user.public_repos],
+              ["Followers", user.followers],
+              ["Stars", totalStars],
+              ["Forks", totalForks],
+            ];
+
+            const statsBody = statItems
+              .map(([label, value], index) => {
+                const x = 32 + (index % 2) * 220;
+                const y = 76 + Math.floor(index / 2) * 70;
+                return `
+              <text x="${x}" y="${y}" class="label">${escapeXml(label)}</text>
+              <text x="${x}" y="${y + 30}" class="value">${formatNumber(value)}</text>`;
+              })
+              .join("");
+
+            const colorPalette = ["#38BDF8", "#22C55E", "#A78BFA", "#F59E0B", "#F472B6", "#94A3B8"];
+            let offset = 24;
+            const languageSegments = languages
+              .map(([language, bytes], index) => {
+                const width = Math.max(4, (bytes / totalLanguageBytes) * 447);
+                const segment = `<rect x="${offset.toFixed(2)}" y="58" width="${width.toFixed(2)}" height="10" rx="5" fill="${colorPalette[index % colorPalette.length]}"/>`;
+                offset += width;
+                return segment;
+              })
+              .join("");
+
+            const languageRows = languages
+              .map(([language, bytes], index) => {
+                const y = 98 + index * 16;
+                const percent = ((bytes / totalLanguageBytes) * 100).toFixed(1);
+                return `
+              <circle cx="30" cy="${y - 4}" r="4" fill="${colorPalette[index % colorPalette.length]}"/>
+              <text x="42" y="${y}" class="small">${escapeXml(language)}</text>
+              <text x="442" y="${y}" text-anchor="end" class="small">${percent}%</text>`;
+              })
+              .join("");
+
+            const languageBody = `
+              ${languageSegments}
+              ${languageRows}`;
+
+            fs.mkdirSync("dist", { recursive: true });
+            fs.writeFileSync("dist/github-stats.svg", cardShell("GitHub Stats", statsBody));
+            fs.writeFileSync("dist/top-languages.svg", cardShell("Top Languages", languageBody));
 
       - uses: crazy-max/ghaction-github-pages@v3
         with:

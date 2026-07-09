@@ -131,8 +131,8 @@
 
 <br/>
 
-<img height="160" src="https://github-readme-stats.vercel.app/api?username=liangqianxing&show_icons=true&hide_border=true&theme=transparent&title_color=38BDF8&icon_color=38BDF8&text_color=94A3B8" alt="GitHub stats" />
-<img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=liangqianxing&layout=compact&hide_border=true&theme=transparent&title_color=38BDF8&text_color=94A3B8" alt="Top languages" />
+<img height="160" src="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@output/github-stats.svg" alt="GitHub stats" />
+<img height="160" src="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@output/top-languages.svg" alt="Top languages" />
 
 </div>
 
