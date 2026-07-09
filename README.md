@@ -1,14 +1,16 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=38BDF8&center=true&vCenter=true&width=760&lines=Hi%2C+I'm+Gu+Enhao+%F0%9F%91%8B;%E5%8F%A4%E6%81%A9%E8%B1%AA+%7C+Full-Stack+Developer;AI+Infra+%7C+LLM+Agents+%7C+Backend+Systems;Building+tools+for+research+and+development" alt="Typing SVG" />
+<h1>Gu Enhao · 古恩豪</h1>
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=38BDF8&center=true&vCenter=true&width=820&lines=Full-Stack+Developer+%40+Meituan;AI+Infra+%7C+LLM+Agents+%7C+Backend+Systems;Building+practical+tools+for+research+and+development" alt="Typing SVG" />
 
 <br/>
+<br/>
 
-### Full-Stack Developer @ Meituan · Building practical AI and developer tools.
-
-[![Blog](https://img.shields.io/badge/Blog-liangqianxing.github.io-38BDF8?style=flat-square&logo=hexo&logoColor=white)](https://liangqianxing.github.io)
-[![GitHub followers](https://img.shields.io/github/followers/liangqianxing?style=flat-square&color=38BDF8&labelColor=1e293b)](https://github.com/liangqianxing?tab=followers)
-[![Profile Views](https://komarev.com/ghpvc/?username=liangqianxing&style=flat-square&color=38BDF8)](https://github.com/liangqianxing)
+[![Blog](https://img.shields.io/badge/Blog-liangqianxing.github.io-38BDF8?style=for-the-badge&logo=hexo&logoColor=white&labelColor=0F172A)](https://liangqianxing.github.io)
+[![DeepScientist](https://img.shields.io/badge/DeepScientist-deepscientist.cc-22C55E?style=for-the-badge&logo=semanticweb&logoColor=white&labelColor=0F172A)](https://deepscientist.cc)
+[![GitHub](https://img.shields.io/github/followers/liangqianxing?style=for-the-badge&color=38BDF8&labelColor=0F172A&logo=github)](https://github.com/liangqianxing?tab=followers)
+[![Views](https://komarev.com/ghpvc/?username=liangqianxing&style=for-the-badge&color=38BDF8&label=Profile+Views)](https://github.com/liangqianxing)
 
 </div>
 
@@ -16,12 +18,37 @@
 
 ## About Me
 
-Hi, I am **Gu Enhao**. I enjoy turning complex ideas into reliable products, especially around **AI infrastructure**, **LLM agents**, **backend systems**, and **research tooling**.
-
-- Currently working as a **Full-Stack Developer Intern at Meituan**.
-- Previously visited **Westlake University NLP Lab**, exploring research-oriented AI systems.
-- Focused on building tools that are useful, maintainable, and pleasant to work with.
-- Writing notes and project stories at [liangqianxing.github.io](https://liangqianxing.github.io).
+<table>
+  <tr>
+    <td width="58%">
+      <h3>Builder at the intersection of product and AI</h3>
+      <p>
+        I am <b>Gu Enhao</b>, a full-stack developer who enjoys turning fuzzy ideas into useful, reliable systems.
+        My current focus is on <b>AI infrastructure</b>, <b>LLM agents</b>, <b>backend systems</b>, and <b>research tooling</b>.
+      </p>
+      <ul>
+        <li>Building practical AI and developer tools at <b>Meituan</b>.</li>
+        <li>Previously explored research-oriented AI systems at <b>Westlake University NLP Lab</b>.</li>
+        <li>Writing engineering notes, experiments, and project stories on my blog.</li>
+      </ul>
+    </td>
+    <td width="42%">
+      <h3>Current Signals</h3>
+      <p>
+        <b>Role</b><br/>
+        Full-Stack Developer Intern @ Meituan
+      </p>
+      <p>
+        <b>Interests</b><br/>
+        LLM Agents · AI Infra · Backend · Open Source
+      </p>
+      <p>
+        <b>Style</b><br/>
+        Product-minded · Systems-oriented · Detail-driven
+      </p>
+    </td>
+  </tr>
+</table>
 
 ---
 
@@ -29,24 +56,24 @@ Hi, I am **Gu Enhao**. I enjoy turning complex ideas into reliable products, esp
 
 <table>
   <tr>
-    <td align="center" width="72">
-      <img src="https://raw.githubusercontent.com/liangqianxing/liangqianxing.github.io/main/public/logos/meituan.svg" width="42" height="42" alt="Meituan" />
+    <td align="center" width="86">
+      <img src="https://raw.githubusercontent.com/liangqianxing/liangqianxing.github.io/main/public/logos/meituan.svg" width="48" height="48" alt="Meituan" />
     </td>
     <td>
       <b>Meituan 美团</b><br/>
       Full-Stack Developer Intern<br/>
-      <sub>2026.05 - Present</sub>
+      <sub>2026.05 - Present · Engineering products across frontend, backend, and internal tooling.</sub>
     </td>
   </tr>
   <tr><td colspan="2"><br/></td></tr>
   <tr>
-    <td align="center" width="72">
-      <img src="https://raw.githubusercontent.com/liangqianxing/liangqianxing.github.io/main/public/logos/westlake.png" width="42" height="42" alt="Westlake University" />
+    <td align="center" width="86">
+      <img src="https://raw.githubusercontent.com/liangqianxing/liangqianxing.github.io/main/public/logos/westlake.png" width="48" height="48" alt="Westlake University" />
     </td>
     <td>
       <b>Westlake University 西湖大学</b><br/>
       Visiting Student, NLP Lab<br/>
-      <sub>2025.12 - 2026.03</sub>
+      <sub>2025.12 - 2026.03 · Research workflow, NLP systems, and AI-assisted knowledge work.</sub>
     </td>
   </tr>
 </table>
@@ -61,35 +88,51 @@ Hi, I am **Gu Enhao**. I enjoy turning complex ideas into reliable products, esp
 
 </div>
 
-**Languages:** Python, C++, TypeScript, JavaScript<br/>
-**Frontend:** React, Next.js<br/>
-**Backend & AI:** Node.js, FastAPI, PyTorch, LLM Agents<br/>
-**Engineering:** Docker, Linux, Git, GitHub Actions
+<table>
+  <tr>
+    <td width="25%"><b>Languages</b><br/>Python · C++ · TypeScript · JavaScript</td>
+    <td width="25%"><b>Frontend</b><br/>React · Next.js · UI Engineering</td>
+    <td width="25%"><b>Backend & AI</b><br/>Node.js · FastAPI · PyTorch · LLM Agents</td>
+    <td width="25%"><b>Engineering</b><br/>Docker · Linux · Git · GitHub Actions</td>
+  </tr>
+</table>
 
 ---
 
 ## Featured Projects
 
-| Project | What it is | Highlights |
-|---|---|---|
-| [Blog / Nova Theme](https://liangqianxing.github.io) | Personal Hexo blog and writing space | Dark mode, MathJax, code highlighting, custom visual effects |
-| [DeepScientist](https://deepscientist.cc) | AI-powered research management platform | Research workflow, knowledge organization, AI assistance |
-| [MiniCode](https://github.com/LiuMengxuan04/MiniCode) | Lightweight terminal AI coding assistant | Claude Code-style workflow, terminal-first interaction |
+<table>
+  <tr>
+    <td width="33%">
+      <h3><a href="https://liangqianxing.github.io">Nova Blog</a></h3>
+      <p>Personal Hexo blog and long-form writing space.</p>
+      <sub>Dark mode · MathJax · Code highlighting · Custom visual effects</sub>
+    </td>
+    <td width="33%">
+      <h3><a href="https://deepscientist.cc">DeepScientist</a></h3>
+      <p>AI-powered research management platform.</p>
+      <sub>Research workflow · Knowledge organization · AI assistance</sub>
+    </td>
+    <td width="33%">
+      <h3><a href="https://github.com/LiuMengxuan04/MiniCode">MiniCode</a></h3>
+      <p>Lightweight terminal AI coding assistant.</p>
+      <sub>Terminal-first · Claude Code-style workflow · Agent interaction</sub>
+    </td>
+  </tr>
+</table>
 
 ---
 
-## GitHub Stats
+## GitHub Dashboard
 
 <div align="center">
 
-<img height="160" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=liangqianxing&theme=transparent" alt="GitHub Stats" />
-<img height="160" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=liangqianxing&theme=transparent" alt="Top Languages" />
+[![GitHub Streak](https://streak-stats.demolab.com?user=liangqianxing&theme=github-dark-blue&hide_border=true&ring=38BDF8&fire=38BDF8&currStreakLabel=38BDF8&sideLabels=94A3B8&dates=94A3B8&currStreakNum=E2E8F0&sideNums=E2E8F0)](https://git.io/streak-stats)
 
-</div>
+<br/>
 
-<div align="center">
-
-[![GitHub Streak](https://streak-stats.demolab.com?user=liangqianxing&theme=transparent&hide_border=true&ring=38BDF8&fire=38BDF8&currStreakLabel=38BDF8&sideLabels=94a3b8&dates=94a3b8&currStreakNum=e2e8f0&sideNums=e2e8f0)](https://git.io/streak-stats)
+<img height="160" src="https://github-readme-stats.vercel.app/api?username=liangqianxing&show_icons=true&hide_border=true&theme=transparent&title_color=38BDF8&icon_color=38BDF8&text_color=94A3B8" alt="GitHub stats" />
+<img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=liangqianxing&layout=compact&hide_border=true&theme=transparent&title_color=38BDF8&text_color=94A3B8" alt="Top languages" />
 
 </div>
 
@@ -112,5 +155,7 @@ Hi, I am **Gu Enhao**. I enjoy turning complex ideas into reliable products, esp
 <div align="center">
 
 <sub>Thanks for visiting. More notes and projects at <a href="https://liangqianxing.github.io">liangqianxing.github.io</a>.</sub>
+
+<br/><br/>
 
 </div>
