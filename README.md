@@ -57,7 +57,7 @@
 <table>
   <tr>
     <td align="center" width="86">
-      <img src="https://raw.githubusercontent.com/liangqianxing/liangqianxing.github.io/main/public/logos/meituan.svg" width="48" height="48" alt="Meituan" />
+      <img src="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing.github.io@main/public/logos/meituan.svg" width="48" height="48" alt="Meituan" />
     </td>
     <td>
       <b>Meituan 美团</b><br/>
@@ -68,7 +68,7 @@
   <tr><td colspan="2"><br/></td></tr>
   <tr>
     <td align="center" width="86">
-      <img src="https://raw.githubusercontent.com/liangqianxing/liangqianxing.github.io/main/public/logos/westlake.png" width="48" height="48" alt="Westlake University" />
+      <img src="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing.github.io@main/public/logos/westlake.png" width="48" height="48" alt="Westlake University" />
     </td>
     <td>
       <b>Westlake University 西湖大学</b><br/>
