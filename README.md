@@ -134,8 +134,8 @@
     </td>
     <td width="50%">
       <h3><a href="https://github.com/liangqianxing/batching-lab">Batching Lab</a></h3>
-      <p>Explore static and continuous LLM inference batching through a deterministic scheduler simulation.</p>
-      <sub><a href="https://liangqianxing.github.io/batching-lab/">Live demo</a> · AI Infra · TypeScript · Simulation</sub>
+      <p>Benchmark real streaming Qwen inference with concurrency traces, TTFT, throughput, cache usage, and generated outputs.</p>
+      <sub><a href="https://liangqianxing.github.io/batching-lab/">Live demo</a> · AI Infra · Python · MLX-LM · React</sub>
     </td>
   </tr>
 </table>
