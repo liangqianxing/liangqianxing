@@ -123,6 +123,25 @@
 
 ---
 
+## Latest Builds
+
+<table>
+  <tr>
+    <td width="50%">
+      <h3><a href="https://github.com/liangqianxing/git-constellation">Git Constellation</a></h3>
+      <p>Turn repository history into an interactive map of files, churn, ownership, and co-change relationships.</p>
+      <sub><a href="https://liangqianxing.github.io/git-constellation/">Live demo</a> · React · Canvas · Git analytics</sub>
+    </td>
+    <td width="50%">
+      <h3><a href="https://github.com/liangqianxing/batching-lab">Batching Lab</a></h3>
+      <p>Explore static and continuous LLM inference batching through a deterministic scheduler simulation.</p>
+      <sub><a href="https://liangqianxing.github.io/batching-lab/">Live demo</a> · AI Infra · TypeScript · Simulation</sub>
+    </td>
+  </tr>
+</table>
+
+---
+
 ## GitHub Dashboard
 
 <div align="center">
