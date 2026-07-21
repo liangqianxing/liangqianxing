@@ -1,6 +1,6 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=venom&color=gradient&customColorList=0,2,2,5,30&height=240&section=header&text=Hi%20there,%20I'm%20Gu%20Enhao&fontSize=50&fontColor=ffffff&animation=twinkling&desc=Full-Stack%20Developer%20%C2%B7%20AI%20Infra%20%C2%B7%20LLM%20Agents&descSize=18&descAlignY=64" alt="header" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=220&section=header&text=Hi%20there,%20I'm%20Gu%20Enhao&fontSize=46&fontColor=ffffff&fontAlignY=38&animation=twinkling&desc=Full-Stack%20Developer%20%C2%B7%20AI%20Infra%20%C2%B7%20LLM%20Agents&descSize=18&descAlignY=58" alt="header" />
 
 <h3>古恩豪 · 全栈开发者 · AI Infra 爱好者</h3>
 
