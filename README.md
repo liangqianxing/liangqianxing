@@ -1,6 +1,6 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=200&section=header&text=Hi%20there,%20I'm%20Gu%20Enhao&fontSize=42&fontColor=ffffff&fontAlignY=36&animation=twinkling" alt="header" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=venom&color=gradient&customColorList=0,2,2,5,30&height=240&section=header&text=Hi%20there,%20I'm%20Gu%20Enhao&fontSize=50&fontColor=ffffff&animation=twinkling&desc=Full-Stack%20Developer%20%C2%B7%20AI%20Infra%20%C2%B7%20LLM%20Agents&descSize=18&descAlignY=64" alt="header" />
 
 <h3>古恩豪 · 全栈开发者 · AI Infra 爱好者</h3>
 
@@ -15,7 +15,7 @@
 
 </div>
 
----
+<img width="100%" height="3" src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=0,2,2,5,30&height=3" alt="" />
 
 ## 👋 关于我
 
@@ -51,7 +51,7 @@
   </tr>
 </table>
 
----
+<img width="100%" height="3" src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=0,2,2,5,30&height=3" alt="" />
 
 ## 💼 经历
 
@@ -79,7 +79,7 @@
   </tr>
 </table>
 
----
+<img width="100%" height="3" src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=0,2,2,5,30&height=3" alt="" />
 
 ## 🛠️ 技术栈
 
@@ -98,7 +98,7 @@
   </tr>
 </table>
 
----
+<img width="100%" height="3" src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=0,2,2,5,30&height=3" alt="" />
 
 ## 🚀 精选项目
 
@@ -107,24 +107,30 @@
     <td width="33%" valign="top">
       <h3>🔬 <a href="https://deepscientist.cc">DeepScientist</a></h3>
       <p>AI 驱动的科研管理平台，覆盖文献、想法与实验的一站式管理。</p>
-      <sub>科研工作流 · 知识管理 · AI 辅助</sub>
+      <img src="https://img.shields.io/badge/科研工作流-FF6B6B?style=flat-square" alt="科研工作流" />
+      <img src="https://img.shields.io/badge/知识管理-A78BFA?style=flat-square" alt="知识管理" />
+      <img src="https://img.shields.io/badge/AI_辅助-2ED3B7?style=flat-square" alt="AI 辅助" />
     </td>
     <td width="33%" valign="top">
       <h3>📝 <a href="https://liangqianxing.github.io">Nova Blog</a></h3>
       <p>个人工程博客，记录 LLM、Agent、AI Infra 与后端系统的思考与实践。</p>
-      <sub>Nuxt 4 · Nuxt Content · TypeScript · GitHub Pages</sub>
+      <img src="https://img.shields.io/badge/Nuxt_4-00DC82?style=flat-square" alt="Nuxt 4" />
+      <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square" alt="TypeScript" />
+      <img src="https://img.shields.io/badge/GitHub_Pages-64748B?style=flat-square" alt="GitHub Pages" />
     </td>
     <td width="33%" valign="top">
       <h3>📊 <a href="https://github.com/liangqianxing/ml-research-plotting-tutorial">ML 科研绘图教程</a></h3>
       <p>面向机器学习研究者的中文科研绘图教程，从论文配图规范到可复用的绘图模板。</p>
-      <sub>中文教程 · Matplotlib · 科研可视化</sub>
+      <img src="https://img.shields.io/badge/Matplotlib-F59E0B?style=flat-square" alt="Matplotlib" />
+      <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square" alt="Python" />
+      <img src="https://img.shields.io/badge/中文教程-F472B6?style=flat-square" alt="中文教程" />
     </td>
   </tr>
 </table>
 
 <p align="center"><a href="https://github.com/liangqianxing?tab=repositories">浏览全部仓库 →</a></p>
 
----
+<img width="100%" height="3" src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=0,2,2,5,30&height=3" alt="" />
 
 ## 📊 GitHub 数据
 
@@ -143,7 +149,7 @@
 
 </div>
 
----
+<img width="100%" height="3" src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=0,2,2,5,30&height=3" alt="" />
 
 ## 🐍 贡献贪吃蛇
 
@@ -157,7 +163,7 @@
 
 </div>
 
----
+<img width="100%" height="3" src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=0,2,2,5,30&height=3" alt="" />
 
 <div align="center">
 
