@@ -103,58 +103,20 @@
 
 <table>
   <tr>
-    <td width="50%" valign="top">
+    <td width="33%" valign="top">
+      <h3><a href="https://deepscientist.cc">DeepScientist</a></h3>
+      <p>AI-powered research management platform for literature, ideas, and experiments.</p>
+      <sub>Research workflow · Knowledge organization · AI assistance</sub>
+    </td>
+    <td width="33%" valign="top">
       <h3><a href="https://liangqianxing.github.io">Nova Blog</a></h3>
       <p>Personal engineering blog for LLMs, agents, AI infrastructure, and backend systems.</p>
       <sub>Nuxt 4 · Nuxt Content · TypeScript · GitHub Pages</sub>
     </td>
-    <td width="50%" valign="top">
-      <h3><a href="https://deepscientist.cc">DeepScientist</a></h3>
-      <p>AI-powered research management platform.</p>
-      <sub>Research workflow · Knowledge organization · AI assistance</sub>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/liangqianxing/git-constellation">Git Constellation</a></h3>
-      <p>Interactive Git history map for files, ownership, churn, and co-change relationships.</p>
-      <sub><a href="https://liangqianxing.github.io/git-constellation/">Live demo</a> · React · TypeScript · Git analytics</sub>
-    </td>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/liangqianxing/batching-lab">Batching Lab</a></h3>
-      <p>Browser-based simulator for static and continuous LLM inference batching.</p>
-      <sub><a href="https://liangqianxing.github.io/batching-lab/">Live demo</a> · React · TypeScript · Vitest</sub>
-    </td>
-  </tr>
-</table>
-
----
-
-## Latest Builds
-
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/liangqianxing/mini-llm-engine">Mini LLM Engine</a></h3>
-      <p>From-scratch LLM inference components covering KV cache, continuous batching, prefix caching, and speculative decoding.</p>
-      <sub>Python · Inference systems · Performance engineering</sub>
-    </td>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/liangqianxing/multimodal-rag">Multimodal RAG</a></h3>
-      <p>Retrieval pipeline combining BM25, dense search, hybrid RRF, and MMR reranking for text and image knowledge.</p>
-      <sub>Python · Information retrieval · Multimodal AI</sub>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/liangqianxing/DocuPulse">DocuPulse</a></h3>
-      <p>Local-first knowledge engine that turns Markdown into searchable vectors with a CLI and FastAPI service.</p>
-      <sub>Python · FastAPI · Vector search · Local-first</sub>
-    </td>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/liangqianxing/hexo-theme-nova">Hexo Theme Nova</a></h3>
-      <p>Modern Hexo theme combining an academic homepage, long-form writing, and responsive reading tools.</p>
-      <sub>CSS · Hexo · Responsive UI</sub>
+    <td width="33%" valign="top">
+      <h3><a href="https://github.com/liangqianxing/ml-research-plotting-tutorial">ML Research Plotting</a></h3>
+      <p>面向机器学习研究者的中文科研绘图教程，从论文配图规范到可复用的绘图模板。</p>
+      <sub>中文教程 · Matplotlib · 科研可视化</sub>
     </td>
   </tr>
 </table>
