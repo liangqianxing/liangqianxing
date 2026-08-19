@@ -66,37 +66,27 @@
 <h2 align="center">💼 经历</h2>
 <p align="center"><sub>EXPERIENCE</sub></p>
 
-<table>
-  <tr>
-    <td align="center" width="150" valign="top">
-      <b><code>2026.05 — 至今</code></b>
-    </td>
-    <td valign="top">
-      <b>美团 · 全栈开发实习生</b>
-      <a href="https://www.meituan.com"><img src="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing.github.io@main/public/logos/meituan.svg" width="22" height="22" alt="Meituan" /></a>
-      <br/>
-      <sub>横跨前端、后端与内部工具的产品工程化</sub>
-      <br/>
-      <img src="https://img.shields.io/badge/实习中-FF6B6B?style=flat-square&labelColor=1E293B" alt="实习中" />
-      <img src="https://img.shields.io/badge/全栈-38BDF8?style=flat-square&labelColor=1E293B" alt="全栈" />
-    </td>
-  </tr>
-  <tr><td colspan="2"><br/></td></tr>
-  <tr>
-    <td align="center" width="150" valign="top">
-      <b><code>2025.12 — 2026.03</code></b>
-    </td>
-    <td valign="top">
-      <b>西湖大学 · NLP 实验室访问学生</b>
-      <a href="https://www.westlake.edu.cn"><img src="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing.github.io@main/public/logos/westlake.png" width="22" height="22" alt="Westlake University" /></a>
-      <br/>
-      <sub>科研工作流、NLP 系统与 AI 辅助知识工作</sub>
-      <br/>
-      <img src="https://img.shields.io/badge/NLP_实验室-A78BFA?style=flat-square&labelColor=1E293B" alt="NLP 实验室" />
-      <img src="https://img.shields.io/badge/研究工具-2ED3B7?style=flat-square&labelColor=1E293B" alt="研究工具" />
-    </td>
-  </tr>
-</table>
+<div align="center">
+
+<a href="https://www.meituan.com">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@output/experience-meituan-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@output/experience-meituan-light.svg" />
+    <img width="820" height="112" loading="lazy" src="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@output/experience-meituan-dark.svg" alt="美团 · 全栈开发实习生" />
+  </picture>
+</a>
+
+<br/><br/>
+
+<a href="https://www.westlake.edu.cn">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@output/experience-westlake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@output/experience-westlake-light.svg" />
+    <img width="820" height="112" loading="lazy" src="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@output/experience-westlake-dark.svg" alt="西湖大学 · NLP 实验室访问学生" />
+  </picture>
+</a>
+
+</div>
 
 <img width="100%" height="12" src="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@main/assets/divider.svg" alt="" />
 
@@ -109,14 +99,11 @@
 
 <br/><br/>
 
-<table>
-  <tr valign="top">
-    <td width="25%"><b>🐍 语言</b><br/>Python · C++ · TypeScript · JavaScript</td>
-    <td width="25%"><b>🎨 前端</b><br/>React · Vue · Nuxt · UI 工程化</td>
-    <td width="25%"><b>⚙️ 后端 & AI</b><br/>Node.js · FastAPI · PyTorch · LLM 推理</td>
-    <td width="25%"><b>🔧 工程化</b><br/>Docker · Linux · Git · GitHub Actions</td>
-  </tr>
-</table>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@output/skills-card-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@output/skills-card-light.svg" />
+  <img width="820" height="122" loading="lazy" src="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@output/skills-card-dark.svg" alt="技术栈" />
+</picture>
 
 <br/>
 
@@ -153,26 +140,32 @@
 
 <table>
   <tr>
-    <td width="33%" valign="top">
-      <h3>🔬 <a href="https://deepscientist.cc">DeepScientist</a></h3>
-      <p>AI 驱动的科研管理平台，覆盖文献、想法与实验的一站式管理。</p>
-      <img src="https://img.shields.io/badge/科研工作流-FF6B6B?style=flat-square&labelColor=1E293B" alt="科研工作流" />
-      <img src="https://img.shields.io/badge/知识管理-A78BFA?style=flat-square&labelColor=1E293B" alt="知识管理" />
-      <img src="https://img.shields.io/badge/AI_辅助-2ED3B7?style=flat-square&labelColor=1E293B" alt="AI 辅助" />
+    <td width="33%" align="center">
+      <a href="https://deepscientist.cc">
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@output/product-deepscientist-dark.svg" />
+          <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@output/product-deepscientist-light.svg" />
+          <img width="270" height="158" loading="lazy" src="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@output/product-deepscientist-dark.svg" alt="DeepScientist" />
+        </picture>
+      </a>
     </td>
-    <td width="33%" valign="top">
-      <h3>📝 <a href="https://liangqianxing.github.io">Nova Blog</a></h3>
-      <p>个人工程博客，记录 LLM、Agent、AI Infra 与后端系统的思考与实践。</p>
-      <img src="https://img.shields.io/badge/Nuxt_4-00DC82?style=flat-square&logo=nuxtdotjs&logoColor=white&labelColor=1E293B" alt="Nuxt 4" />
-      <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white&labelColor=1E293B" alt="TypeScript" />
-      <img src="https://img.shields.io/badge/GitHub_Pages-64748B?style=flat-square&labelColor=1E293B" alt="GitHub Pages" />
+    <td width="33%" align="center">
+      <a href="https://liangqianxing.github.io">
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@output/product-nova-blog-dark.svg" />
+          <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@output/product-nova-blog-light.svg" />
+          <img width="270" height="158" loading="lazy" src="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@output/product-nova-blog-dark.svg" alt="Nova Blog" />
+        </picture>
+      </a>
     </td>
-    <td width="33%" valign="top">
-      <h3>📊 <a href="https://github.com/liangqianxing/ml-research-plotting-tutorial">ML 科研绘图教程</a></h3>
-      <p>面向机器学习研究者的中文科研绘图教程，从论文配图规范到可复用的绘图模板。</p>
-      <img src="https://img.shields.io/badge/Matplotlib-F59E0B?style=flat-square&labelColor=1E293B" alt="Matplotlib" />
-      <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white&labelColor=1E293B" alt="Python" />
-      <img src="https://img.shields.io/badge/中文教程-F472B6?style=flat-square&labelColor=1E293B" alt="中文教程" />
+    <td width="33%" align="center">
+      <a href="https://github.com/liangqianxing/ml-research-plotting-tutorial">
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@output/product-ml-plotting-dark.svg" />
+          <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@output/product-ml-plotting-light.svg" />
+          <img width="270" height="158" loading="lazy" src="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@output/product-ml-plotting-dark.svg" alt="ML 科研绘图教程" />
+        </picture>
+      </a>
     </td>
   </tr>
 </table>

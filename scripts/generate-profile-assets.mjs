@@ -257,6 +257,170 @@ const renderRepoCard = ({ repo, description, dark }) => {
   return shell({ width, height, dark, body });
 };
 
+
+const renderTagDots = (x, y, tags, dark, size = 10) => {
+  const p = palette(dark);
+  let cursor = x;
+  return tags.map(([label, color]) => {
+    const text = `<circle cx="${cursor + 3}" cy="${y - 3.5}" r="3" fill="${color}"/><text x="${cursor + 10}" y="${y}" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="${size}" font-weight="600" fill="${p.text}">${escapeXml(label)}</text>`;
+    cursor += 10 + widthOf(label, size) + 14;
+    return text;
+  }).join("");
+};
+
+const products = [
+  {
+    id: "deepscientist",
+    name: "DeepScientist",
+    icon: "🔬",
+    accent: acc.green,
+    url: "https://deepscientist.cc",
+    description: [
+      "AI 驱动的科研管理平台，",
+      "覆盖文献、想法与实验的一站式管理。",
+    ],
+    tags: [
+      ["科研工作流", acc.pink],
+      ["知识管理", acc.violet],
+      ["AI 辅助", acc.green],
+    ],
+  },
+  {
+    id: "nova-blog",
+    name: "Nova Blog",
+    icon: "📝",
+    accent: acc.cyan,
+    url: "https://liangqianxing.github.io",
+    description: [
+      "个人工程博客，记录 LLM、Agent、",
+      "AI Infra 与后端系统的思考与实践。",
+    ],
+    tags: [
+      ["Nuxt 4", acc.green],
+      ["TypeScript", acc.cyan],
+      ["GitHub Pages", acc.violet],
+    ],
+  },
+  {
+    id: "ml-plotting",
+    name: "ML 科研绘图教程",
+    icon: "📊",
+    accent: acc.pink,
+    url: "https://github.com/liangqianxing/ml-research-plotting-tutorial",
+    description: [
+      "面向机器学习研究者的中文绘图教程，",
+      "从论文配图规范到可复用模板。",
+    ],
+    tags: [
+      ["Matplotlib", acc.amber],
+      ["Python", acc.cyan],
+      ["中文教程", acc.pink],
+    ],
+  },
+];
+
+const renderProductCard = ({ product, dark }) => {
+  const width = 270;
+  const height = 158;
+  const p = palette(dark);
+  const iconColor = product.accent;
+  const desc = product.description.map((line, i) =>
+    `<text x="18" y="${70 + i * 17}" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11.5" font-weight="450" fill="${p.dim}">${escapeXml(line)}</text>`,
+  ).join("");
+
+  const body = `
+  <rect x="16" y="16" width="36" height="36" rx="12" fill="${iconColor}" fill-opacity="0.14" stroke="${iconColor}" stroke-opacity="0.45"/>
+  <text x="34" y="41" text-anchor="middle" font-size="18">${product.icon}</text>
+  <text x="60" y="35" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="15.5" font-weight="750" fill="${p.title}">${escapeXml(product.name)}</text>
+  <text x="${width - 18}" y="35" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14" font-weight="600" fill="${iconColor}">↗</text>
+  ${desc}
+  ${renderTagDots(18, 126, product.tags, dark, 9.5)}`;
+
+  return shell({ width, height, dark, body });
+};
+
+const experiences = [
+  {
+    id: "meituan",
+    date: "2026.05 — 至今",
+    role: "美团 · 全栈开发实习生",
+    accent: acc.cyan,
+    description: "横跨前端、后端与内部工具的产品工程化",
+    tags: [["实习中", acc.pink], ["全栈", acc.cyan]],
+  },
+  {
+    id: "westlake",
+    date: "2025.12 — 2026.03",
+    role: "西湖大学 · NLP 实验室访问学生",
+    accent: acc.violet,
+    description: "科研工作流、NLP 系统与 AI 辅助知识工作",
+    tags: [["NLP 实验室", acc.violet], ["研究工具", acc.green]],
+  },
+];
+
+const renderExperienceCard = ({ experience, dark }) => {
+  const width = 820;
+  const height = 112;
+  const p = palette(dark);
+  const dateWidth = widthOf(experience.date, 12) + 24;
+
+  const body = `
+  <rect x="20" y="20" width="${dateWidth}" height="30" rx="15" fill="${experience.accent}" fill-opacity="0.14" stroke="${experience.accent}" stroke-opacity="0.45"/>
+  <text x="${20 + dateWidth / 2}" y="40" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="${experience.accent}">${escapeXml(experience.date)}</text>
+  <text x="${40 + dateWidth}" y="40" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="15.5" font-weight="750" fill="${p.title}">${escapeXml(experience.role)}</text>
+  <text x="${width - 18}" y="40" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14" font-weight="600" fill="${experience.accent}">↗</text>
+  <text x="${40 + dateWidth}" y="65" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="450" fill="${p.dim}">${escapeXml(experience.description)}</text>
+  ${renderTagDots(40 + dateWidth, 92, experience.tags, dark, 10.5)}`;
+
+  return shell({ width, height, dark, body });
+};
+
+const skillGroups = [
+  {
+    icon: "🐍",
+    title: "语言",
+    accent: acc.cyan,
+    lines: ["Python · C++", "TypeScript · JavaScript"],
+  },
+  {
+    icon: "🎨",
+    title: "前端",
+    accent: acc.pink,
+    lines: ["React · Vue", "Nuxt · UI 工程化"],
+  },
+  {
+    icon: "⚙️",
+    title: "后端 & AI",
+    accent: acc.green,
+    lines: ["Node.js · FastAPI", "PyTorch · LLM 推理"],
+  },
+  {
+    icon: "🔧",
+    title: "工程化",
+    accent: acc.violet,
+    lines: ["Docker · Linux", "Git · GitHub Actions"],
+  },
+];
+
+const renderSkillsCard = ({ dark }) => {
+  const width = 820;
+  const height = 122;
+  const p = palette(dark);
+  const columns = skillGroups.map((group, index) => {
+    const x = 22 + index * 199;
+    const lines = group.lines.map((line, i) =>
+      `<text x="${x + 6}" y="${74 + i * 20}" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="500" fill="${p.dim}">${escapeXml(line)}</text>`,
+    ).join("");
+    return `
+  <text x="${x + 6}" y="40" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="15" font-weight="750" fill="${p.title}">${group.icon} ${escapeXml(group.title)}</text>
+  <rect x="${x + 8}" y="50" width="32" height="3" rx="1.5" fill="${group.accent}"/>
+  ${lines}
+  ${index < skillGroups.length - 1 ? `<line x1="${x + 190}" y1="24" x2="${x + 190}" y2="${height - 24}" stroke="${p.border}" stroke-width="1"/>` : ""}`;
+  }).join("");
+
+  return shell({ width, height, dark, body: columns });
+};
+
 const descriptions = {
   "hexo-theme-nova": [
     "现代 Hexo 主题：学术主页 + 博客一体化，",
@@ -329,6 +493,22 @@ const main = async () => {
         renderRepoCard({ repo, description: descriptions[name] || repo.description || name, dark }),
       );
     }
+    for (const product of products) {
+      fs.writeFileSync(
+        path.join(dist, `product-${product.id}-${suffix}.svg`),
+        renderProductCard({ product, dark }),
+      );
+    }
+    for (const experience of experiences) {
+      fs.writeFileSync(
+        path.join(dist, `experience-${experience.id}-${suffix}.svg`),
+        renderExperienceCard({ experience, dark }),
+      );
+    }
+    fs.writeFileSync(
+      path.join(dist, `skills-card-${suffix}.svg`),
+      renderSkillsCard({ dark }),
+    );
   }
 
   fs.writeFileSync(
