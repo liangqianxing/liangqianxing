@@ -25,7 +25,8 @@
 
 <img width="100%" height="12" src="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@main/assets/divider.svg" alt="" />
 
-## 👋 关于我
+<h2 align="center">👋 关于我</h2>
+<p align="center"><sub>ABOUT ME</sub></p>
 
 <table>
   <tr>
@@ -62,7 +63,8 @@
 
 <img width="100%" height="12" src="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@main/assets/divider.svg" alt="" />
 
-## 💼 经历
+<h2 align="center">💼 经历</h2>
+<p align="center"><sub>EXPERIENCE</sub></p>
 
 <table>
   <tr>
@@ -98,7 +100,8 @@
 
 <img width="100%" height="12" src="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@main/assets/divider.svg" alt="" />
 
-## 🛠️ 技术栈
+<h2 align="center">🛠️ 技术栈</h2>
+<p align="center"><sub>TECH STACK</sub></p>
 
 <div align="center">
 
@@ -143,7 +146,8 @@
 
 <img width="100%" height="12" src="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@main/assets/divider.svg" alt="" />
 
-## 🚀 精选项目
+<h2 align="center">🚀 精选项目</h2>
+<p align="center"><sub>FEATURED PROJECTS</sub></p>
 
 ### 🌟 产品与网站
 
@@ -223,7 +227,8 @@
 
 <img width="100%" height="12" src="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@main/assets/divider.svg" alt="" />
 
-## 📊 GitHub 数据
+<h2 align="center">📊 GitHub 数据</h2>
+<p align="center"><sub>GITHUB STATISTICS</sub></p>
 
 <div align="center">
 
@@ -259,7 +264,8 @@
 
 <img width="100%" height="12" src="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@main/assets/divider.svg" alt="" />
 
-## 🐍 贡献贪吃蛇
+<h2 align="center">🐍 贡献贪吃蛇</h2>
+<p align="center"><sub>CONTRIBUTION SNAKE</sub></p>
 
 <div align="center">
 
