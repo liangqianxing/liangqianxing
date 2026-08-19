@@ -136,7 +136,7 @@
 <h2 align="center">🚀 精选项目</h2>
 <p align="center"><sub>FEATURED PROJECTS</sub></p>
 
-### 🌟 产品与网站
+<h3 align="center">🌟 产品与网站</h3>
 
 <table>
   <tr>
@@ -170,7 +170,7 @@
   </tr>
 </table>
 
-### 🧩 开源仓库
+<h3 align="center">🧩 开源仓库</h3>
 
 <table>
   <tr>
