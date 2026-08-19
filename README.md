@@ -173,17 +173,17 @@
   <tr>
     <td width="50%" valign="top">
       <h4>🌌 <a href="https://github.com/liangqianxing/hexo-theme-nova">hexo-theme-nova</a>
-        <sup><img src="https://img.shields.io/github/stars/liangqianxing/hexo-theme-nova?style=flat-square&color=F59E0B&labelColor=1E293B&label=⭐" alt="stars" /></sup>
+        <sup><img src="https://img.shields.io/github/stars/liangqianxing/hexo-theme-nova?style=flat-square&color=F59E0B&labelColor=1E293B&label=%E2%AD%90" alt="stars" /></sup>
       </h4>
       <p>现代 Hexo 主题：学术主页 + 博客一体化，支持暗色模式、目录与响应式布局。</p>
       <img src="https://img.shields.io/badge/Hexo-0E83CD?style=flat-square&logo=hexo&logoColor=white&labelColor=1E293B" alt="Hexo" />
       <img src="https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=css3&logoColor=white&labelColor=1E293B" alt="CSS" />
       <img src="https://img.shields.io/badge/MIT-2ED3B7?style=flat-square&labelColor=1E293B" alt="MIT" />
-      <img src="https://img.shields.io/github/forks/liangqianxing/hexo-theme-nova?style=flat-square&color=38BDF8&labelColor=1E293B&label=🍴" alt="forks" />
+      <img src="https://img.shields.io/github/forks/liangqianxing/hexo-theme-nova?style=flat-square&color=38BDF8&labelColor=1E293B&label=%F0%9F%8D%B4" alt="forks" />
     </td>
     <td width="50%" valign="top">
       <h4>🧠 <a href="https://github.com/liangqianxing/agentmem">agentmem</a>
-        <sup><img src="https://img.shields.io/github/stars/liangqianxing/agentmem?style=flat-square&color=F59E0B&labelColor=1E293B&label=⭐" alt="stars" /></sup>
+        <sup><img src="https://img.shields.io/github/stars/liangqianxing/agentmem?style=flat-square&color=F59E0B&labelColor=1E293B&label=%E2%AD%90" alt="stars" /></sup>
       </h4>
       <p>面向 LLM Agent 推理的内存管理系统：KV Cache 生命周期管理、分支 CoW、上下文压缩、工具数据外置、三级分层存储。</p>
       <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white&labelColor=1E293B" alt="Python" />
@@ -195,7 +195,7 @@
   <tr>
     <td width="50%" valign="top">
       <h4>⚡ <a href="https://github.com/liangqianxing/fast-llm-kernels">fast-llm-kernels</a>
-        <sup><img src="https://img.shields.io/github/stars/liangqianxing/fast-llm-kernels?style=flat-square&color=F59E0B&labelColor=1E293B&label=⭐" alt="stars" /></sup>
+        <sup><img src="https://img.shields.io/github/stars/liangqianxing/fast-llm-kernels?style=flat-square&color=F59E0B&labelColor=1E293B&label=%E2%AD%90" alt="stars" /></sup>
       </h4>
       <p>高性能 PyTorch CUDA 算子：RMSNorm 与 fused residual-add + RMSNorm 实现。</p>
       <img src="https://img.shields.io/badge/CUDA-76B900?style=flat-square&logo=nvidia&logoColor=white&labelColor=1E293B" alt="CUDA" />
@@ -204,7 +204,7 @@
     </td>
     <td width="50%" valign="top">
       <h4>🖥️ <a href="https://github.com/liangqianxing/ToyOS">ToyOS</a>
-        <sup><img src="https://img.shields.io/github/stars/liangqianxing/ToyOS?style=flat-square&color=F59E0B&labelColor=1E293B&label=⭐" alt="stars" /></sup>
+        <sup><img src="https://img.shields.io/github/stars/liangqianxing/ToyOS?style=flat-square&color=F59E0B&labelColor=1E293B&label=%E2%AD%90" alt="stars" /></sup>
       </h4>
       <p>ECNU OSLab 2025：从 0 到 1 的 RISC-V 小型内核实现（lab-0 ~ lab-2 已完成）。</p>
       <img src="https://img.shields.io/badge/C-555555?style=flat-square&logo=c&logoColor=white&labelColor=1E293B" alt="C" />
