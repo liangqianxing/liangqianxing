@@ -1,0 +1,46 @@
+<svg width="420" height="148" viewBox="0 0 420 148" fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
+  
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1220"/>
+      <stop offset="1" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#38BDF8"/>
+      <stop offset="0.55" stop-color="#A78BFA"/>
+      <stop offset="1" stop-color="#F472B6"/>
+    </linearGradient>
+    <linearGradient id="border" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#38BDF8" stop-opacity="0.75"/>
+      <stop offset="0.55" stop-color="#A78BFA" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#F472B6" stop-opacity="0.75"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="translate(0.82 0.08) rotate(125) scale(1.2)">
+      <stop offset="0" stop-color="#38BDF8" stop-opacity="0.20"/>
+      <stop offset="0.5" stop-color="#A78BFA" stop-opacity="0.13"/>
+      <stop offset="1" stop-color="#F472B6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect x="0" y="0" width="420" height="148" rx="20" fill="url(#bg)"/>
+  <rect x="1.25" y="1.25" width="417.5" height="145.5" rx="18.75" fill="none" stroke="url(#border)" stroke-width="1.5"/>
+  <ellipse cx="344.4" cy="14.8" rx="142.8" ry="81.4" fill="url(#glow)" opacity="0.9"/>
+  
+  <rect x="16" y="16" width="5" height="24" rx="2.5" fill="url(#accent)"/>
+  <text x="29" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="16" font-weight="750" fill="#FFFFFF">agentmem</text>
+  <text x="398" y="34" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="15" font-weight="600" fill="#38BDF8">↗</text>
+  <text x="22" y="68" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12.5" font-weight="450" fill="#64748B">面向 LLM Agent 推理的内存管理系统：KV Cache</text><text x="22" y="85" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12.5" font-weight="450" fill="#64748B">生命周期、分支 CoW、上下文压缩与三级分层存储。</text>
+  <circle cx="25" cy="123" r="4.5" fill="#3776AB"/>
+  <text x="35" y="127" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="650" fill="#CBD5E1">Python</text>
+  <g transform="translate(302 116)">
+    <path d="M12 1.5l3.1 6.3 6.9 1-5 4.9 1.2 6.9-6.2-3.3-6.2 3.3 1.2-6.9-5-4.9 6.9-1L12 1.5z" fill="#FBBF24" fill-opacity="0.95"/>
+    <text x="29" y="10" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#CBD5E1">0</text>
+  </g>
+  <g transform="translate(358 116)" fill="none" stroke="#CBD5E1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="3.5" cy="3.5" r="1.8"/>
+    <circle cx="3.5" cy="11.5" r="1.8"/>
+    <circle cx="12" cy="4.5" r="1.8"/>
+    <path d="M3.5 5.3v4.4c0 1 .8 1.8 1.8 1.8h5.4"/>
+    <path d="M12 2.7v1.8"/>
+  </g>
+  <text x="400" y="127" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#CBD5E1">0</text>
+</svg>
