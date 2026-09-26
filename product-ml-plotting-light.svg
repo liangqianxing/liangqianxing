@@ -1,0 +1,34 @@
+<svg width="270" height="158" viewBox="0 0 270 158" fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
+  
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F8FAFC"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#38BDF8"/>
+      <stop offset="0.55" stop-color="#A78BFA"/>
+      <stop offset="1" stop-color="#F472B6"/>
+    </linearGradient>
+    <linearGradient id="border" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#38BDF8" stop-opacity="0.55"/>
+      <stop offset="0.55" stop-color="#A78BFA" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#F472B6" stop-opacity="0.55"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="translate(0.82 0.08) rotate(125) scale(1.2)">
+      <stop offset="0" stop-color="#38BDF8" stop-opacity="0.12"/>
+      <stop offset="0.5" stop-color="#A78BFA" stop-opacity="0.078"/>
+      <stop offset="1" stop-color="#F472B6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect x="0" y="0" width="270" height="158" rx="20" fill="url(#bg)"/>
+  <rect x="1.25" y="1.25" width="267.5" height="155.5" rx="18.75" fill="none" stroke="url(#border)" stroke-width="1.5"/>
+  <ellipse cx="221.39999999999998" cy="15.8" rx="91.80000000000001" ry="86.9" fill="url(#glow)" opacity="0.8"/>
+  
+  <rect x="16" y="16" width="36" height="36" rx="12" fill="#F472B6" fill-opacity="0.14" stroke="#F472B6" stroke-opacity="0.45"/>
+  <text x="34" y="41" text-anchor="middle" font-size="18">📊</text>
+  <text x="60" y="35" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="15.5" font-weight="750" fill="#0F172A">ML 科研绘图教程</text>
+  <text x="252" y="35" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14" font-weight="600" fill="#F472B6">↗</text>
+  <text x="18" y="70" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11.5" font-weight="450" fill="#94A3B8">面向机器学习研究者的中文绘图教程，</text><text x="18" y="87" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11.5" font-weight="450" fill="#94A3B8">从论文配图规范到可复用模板。</text>
+  <circle cx="21" cy="122.5" r="3" fill="#FBBF24"/><text x="28" y="126" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9.5" font-weight="600" fill="#334155">Matplotlib</text><circle cx="100.1" cy="122.5" r="3" fill="#38BDF8"/><text x="107.1" y="126" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9.5" font-weight="600" fill="#334155">Python</text><circle cx="157.16" cy="122.5" r="3" fill="#F472B6"/><text x="164.16" y="126" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9.5" font-weight="600" fill="#334155">中文教程</text>
+</svg>
