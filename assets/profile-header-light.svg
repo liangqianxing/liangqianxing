@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="250" viewBox="0 0 960 250" fill="none" role="img" aria-labelledby="title description">
+  <title id="title">古恩豪 · Enhao Gu</title>
+  <desc id="description">AI4Science, LLM Agents and AI Infrastructure. An illustration connects research, agents and systems.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="960" y2="250" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FAFC" />
+      <stop offset="1" stop-color="#EEF7F5" />
+    </linearGradient>
+    <linearGradient id="accent" x1="48" y1="218" x2="912" y2="218" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F766E" />
+      <stop offset="1" stop-color="#0F766E" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="958" height="248" rx="20" fill="url(#background)" stroke="#DCE8E5" />
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif">
+    <text x="48" y="49" font-size="12" font-weight="600" letter-spacing="2.4" fill="#64748B">LIANGQIANXING / RESEARCH &amp; ENGINEERING</text>
+    <text x="45" y="119" font-size="56" font-weight="750" letter-spacing="-1.5" fill="#0F172A">Enhao Gu</text>
+    <text x="49" y="157" font-size="18" fill="#334155">AI4Science · LLM Agents · AI Infrastructure</text>
+    <text x="49" y="193" font-size="13" fill="#64748B">Research agents. Inference systems. Developer tools.</text>
+  </g>
+  <g stroke="#9CBDB7" stroke-width="1.5">
+    <path d="M703 91L844 126L725 184L703 91Z" />
+    <path d="M703 91L776 42M844 126L913 174M725 184L811 220" stroke-dasharray="4 6" />
+  </g>
+  <g fill="#F8FAFC" stroke="#0F766E" stroke-width="1.5">
+    <circle cx="703" cy="91" r="23" />
+    <circle cx="844" cy="126" r="29" />
+    <circle cx="725" cy="184" r="19" />
+  </g>
+  <g fill="#0F766E">
+    <circle cx="703" cy="91" r="5" />
+    <circle cx="844" cy="126" r="7" />
+    <circle cx="725" cy="184" r="4" />
+  </g>
+  <g fill="#94ABA6">
+    <circle cx="776" cy="42" r="3" />
+    <circle cx="913" cy="174" r="3" />
+    <circle cx="811" cy="220" r="3" />
+  </g>
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="10" font-weight="600" letter-spacing="1.3" fill="#52746D">
+    <text x="674" y="54">RESEARCH</text>
+    <text x="819" y="85">AGENTS</text>
+    <text x="675" y="223">SYSTEMS</text>
+  </g>
+  <rect x="48" y="218" width="535" height="2" rx="1" fill="url(#accent)" />
+</svg>

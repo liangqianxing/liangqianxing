@@ -1,290 +1,129 @@
-<div align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/profile-header-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/profile-header-light.svg" />
+  <img width="100%" src="assets/profile-header-light.svg" alt="古恩豪 Enhao Gu — AI4Science, LLM Agents and AI Infrastructure" />
+</picture>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=220&section=header&text=Hi%20there,%20I'm%20Gu%20Enhao&fontSize=46&fontColor=ffffff&fontAlignY=38&animation=twinkling&desc=Full-Stack%20Developer%20%C2%B7%20AI%20Infra%20%C2%B7%20LLM%20Agents&descSize=18&descAlignY=58" alt="header" />
+<p align="center">
+  <a href="https://liangqianxing.github.io"><b>个人网站 / Blog</b></a>
+  &nbsp; · &nbsp;
+  <a href="https://github.com/ResearAI/DeepScientist"><b>DeepScientist</b></a>
+  &nbsp; · &nbsp;
+  <a href="https://github.com/liangqianxing?tab=repositories"><b>开源项目 / Projects</b></a>
+</p>
 
-<br/>
+## 关于我 · About
 
-<img width="124" height="124" src="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@main/assets/avatar.png" alt="古恩豪的头像" />
+你好，我是 **古恩豪 / Enhao Gu**。我做科研智能体与全栈开发，也关注 LLM 推理效率和 Agent 基础设施。喜欢从论文与真实任务出发，把系统做出来，再通过实验和使用反馈改进。
 
-<h1>古恩豪 <sup><sub>Gu Enhao</sub></sup></h1>
+- **现在**：在美团实习，参与 AI Coding 工具与开发平台建设。
+- **研究**：曾在西湖大学 NLP 实验室参与科研智能体研发，在北京大学 IFlab 参与视频扩散模型推理加速研究。
+- **近期关注**：Agent 的规划、记忆与工具调用，以及上下文管理、KV Cache 和推理算子优化。
+- **记录**：在 [个人网站](https://liangqianxing.github.io) 整理工程笔记、实验与开源项目。
 
-<img width="760" height="50" src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=38BDF8&center=true&vCenter=true&width=760&lines=Full-Stack+Developer+%40+Meituan;AI+Infra+%7C+LLM+Agents+%7C+Backend+Systems;Building+practical+tools+for+research+and+development" alt="Typing SVG" />
+### 教育与经历
 
-<br/>
+| 学校 / 团队 | 时间 | 经历 |
+| :--- | :--- | :--- |
+| **华东师范大学** | 2027 - 2030 | 软件工程 · **已保研录取，2027 年入学** |
+| **新疆大学** | 2023 - 2027 | 软件工程 · 本科在读；曾于中南大学交换学习 |
+| **美团** | 2026.06 - 至今 | 全栈开发实习生 · Agent 任务编排、沙箱执行与工具调用链路 |
+| **西湖大学 · NLP 实验室** | 2025.12 - 2026.03 | 访问学生 · DeepScientist、DeepReviewer 2.0、AutoFigure-Edit |
+| **北京大学 · IFlab** | 2025.09 - 2025.12 | 科研实习生 · 视频扩散模型推理加速 |
 
-[![博客](https://img.shields.io/badge/📝_博客-liangqianxing.github.io-FF6B6B?style=for-the-badge&labelColor=0F172A&logoColor=white)](https://liangqianxing.github.io)
-[![DeepScientist](https://img.shields.io/badge/🔬_DeepScientist-deepscientist.cc-2ED3B7?style=for-the-badge&labelColor=0F172A&logoColor=white)](https://deepscientist.cc)
-[![GitHub](https://img.shields.io/github/followers/liangqianxing?style=for-the-badge&color=A78BFA&labelColor=0F172A&logo=github&logoColor=white&label=关注者)](https://github.com/liangqianxing?tab=followers)
-[![访客](https://komarev.com/ghpvc/?username=liangqianxing&style=for-the-badge&color=F59E0B&labelColor=0F172A&label=访客)](https://github.com/liangqianxing)
+## 科研工作 · Research
 
-<br/>
+以下是我作为共同作者参与的两项工作：
 
-> 💡 把模糊的想法，变成可靠、好用的系统。
+| 工作 | 方向 | 公开成果 |
+| :--- | :--- | :--- |
+| **[DeepReviewer 2.0](https://arxiv.org/abs/2604.09590)** | 可追踪、可审计的科研评审 Agent；证据锚定与分阶段核验 | arXiv · 2026 |
+| **[AutoFigure-Edit](https://aclanthology.org/2026.acl-demo.6/)** | 参考风格引导的可编辑科研插图生成 | ACL 2026 · System Demonstrations |
 
-</div>
+在科研系统开发中，我参与了 DeepScientist 的 Copilot / Autonomous 工作模式、会话上下文续接、MCP 工具接入，以及 Agent 运行轨迹与交互式终端展示。
 
-<img width="100%" height="12" src="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@main/assets/divider.svg" alt="" />
-
-<h2 align="center">👋 关于我</h2>
-<p align="center"><sub>ABOUT ME</sub></p>
+## 精选项目 · Selected Projects
 
 <table>
   <tr>
-    <td width="60%" valign="top">
-      <h3>🚀 在产品与 AI 的交叉点做构建</h3>
-      <p>
-        我是 <b>古恩豪</b>，一名全栈开发者，喜欢把模糊的想法变成可靠、好用的系统。
-        目前专注于 <b>AI 基础设施</b>、<b>LLM Agents</b>、<b>后端系统</b>和<b>研究工具</b>。
-      </p>
-      <ul>
-        <li>🔭 在 <b>美团</b> 构建实用的 AI 与开发者工具</li>
-        <li>🎓 曾在 <b>西湖大学 NLP 实验室</b> 探索研究导向的 AI 系统</li>
-        <li>✍️ 在博客记录工程笔记、实验和项目故事</li>
-        <li>🧠 长期关注 LLM 推理系统与 Agent 基础设施</li>
-      </ul>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/ResearAI/DeepScientist">DeepScientist ↗</a></h3>
+      <p>参与研发的科研智能体平台。围绕研究任务连接规划、代码执行、工具调用与科研产物。</p>
+      <p><sub>AI4Science · Agent / Copilot · MCP</sub></p>
+      <a href="https://github.com/ResearAI/DeepScientist">源码</a> · <a href="https://deepscientist.cc">网站</a>
     </td>
-    <td width="40%" valign="top">
-      <h3>⚡ 快速档案</h3>
-      <p>
-        <b>🪪 身份</b><br/>
-        美团 · 全栈开发实习生
-      </p>
-      <p>
-        <b>🎯 兴趣</b><br/>
-        LLM Agents · AI Infra · 后端 · 开源
-      </p>
-      <p>
-        <b>🎨 风格</b><br/>
-        产品思维 · 系统导向 · 细节驱动
-      </p>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/LiuMengxuan04/MiniCode">MiniCode ↗</a></h3>
+      <p>参与核心开发的轻量级终端 AI 编程助手。实现 ReAct 循环、工具注册与权限拦截，集成 MCP 和 Skills。</p>
+      <p><sub>TypeScript · Agentic Coding · Tool Use</sub></p>
+      <a href="https://github.com/LiuMengxuan04/MiniCode">源码</a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/liangqianxing/agentmem">AgentMem ↗</a></h3>
+      <p>面向 LLM Agent 推理的内存管理系统：KV Cache 生命周期、分支 CoW、上下文压缩与分层存储。</p>
+      <p><sub>Python · KV Cache · Inference Systems</sub></p>
+      <a href="https://github.com/liangqianxing/agentmem">源码</a>
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/liangqianxing/fast-llm-kernels">Fast LLM Kernels ↗</a></h3>
+      <p>围绕 RMSNorm 和 residual-add 融合算子优化推理路径，配套数值验证、基准测试与性能分析。</p>
+      <p><sub>C++ / CUDA · PyTorch · Profiling</sub></p>
+      <a href="https://github.com/liangqianxing/fast-llm-kernels">源码</a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/liangqianxing/ml-research-plotting-tutorial">ML Figure Lab ↗</a></h3>
+      <p>面向机器学习研究者的中文绘图教程。从实验图表到论文架构图，整理可复用的绘图方法。</p>
+      <p><sub>Scientific Figures · VitePress · Research Tools</sub></p>
+      <a href="https://github.com/liangqianxing/ml-research-plotting-tutorial">源码</a> · <a href="https://liangqianxing.github.io/ml-research-plotting-tutorial/">在线阅读</a>
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/liangqianxing/hexo-theme-nova">Hexo Theme Nova ↗</a></h3>
+      <p>融合学术主页与博客的 Hexo 主题，支持深浅色模式、文章目录与响应式布局。</p>
+      <p><sub>Hexo · Academic Homepage · Web Design</sub></p>
+      <a href="https://github.com/liangqianxing/hexo-theme-nova">源码</a>
     </td>
   </tr>
 </table>
 
-<img width="100%" height="12" src="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@main/assets/divider.svg" alt="" />
+也在做系统方向的学习项目：[ToyOS](https://github.com/liangqianxing/ToyOS) · 从零实现 RISC-V 小型内核。
 
-<h2 align="center">💼 经历</h2>
-<p align="center"><sub>EXPERIENCE</sub></p>
+## 工具与积累 · Toolkit
 
-<div align="center">
+| 方向 | 常用工具与方法 |
+| :--- | :--- |
+| **Agent / AI** | Python、PyTorch、Transformers、PEFT / LoRA、ReAct、MCP、上下文管理 |
+| **全栈与系统** | TypeScript、React、Next.js、Vue / Nuxt、FastAPI、PostgreSQL、Docker、Linux |
+| **开发与实验** | C++、Git、GitHub Actions、Codex、Claude Code、可复现评测 |
 
-<a href="https://www.meituan.com">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@output/experience-meituan-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@output/experience-meituan-light.svg" />
-    <img width="820" height="112" loading="lazy" src="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@output/experience-meituan-dark.svg" alt="美团 · 全栈开发实习生" />
-  </picture>
-</a>
-
-<br/><br/>
-
-<a href="https://www.westlake.edu.cn">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@output/experience-westlake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@output/experience-westlake-light.svg" />
-    <img width="820" height="112" loading="lazy" src="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@output/experience-westlake-dark.svg" alt="西湖大学 · NLP 实验室访问学生" />
-  </picture>
-</a>
-
-</div>
-
-<img width="100%" height="12" src="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@main/assets/divider.svg" alt="" />
-
-<h2 align="center">🛠️ 技术栈</h2>
-<p align="center"><sub>TECH STACK</sub></p>
-
-<div align="center">
-
-<a href="https://skillicons.dev"><img width="779" height="48" loading="lazy" src="https://skillicons.dev/icons?i=py,cpp,ts,js,react,vue,nuxt,nodejs,fastapi,pytorch,docker,git,linux,githubactions&theme=dark" alt="Python, C++, TypeScript, JavaScript, React, Vue, Nuxt, Node.js, FastAPI, PyTorch, Docker, Git, Linux, and GitHub Actions" /></a>
-
-<br/><br/>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@output/skills-card-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@output/skills-card-light.svg" />
-  <img width="820" height="122" loading="lazy" src="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@output/skills-card-dark.svg" alt="技术栈" />
-</picture>
-
-<br/>
+**竞赛**：ACM-ICPC 亚洲区域赛铜牌、全国邀请赛银牌、新疆自治区赛金牌；CCPC 全国邀请赛银牌。
 
 <details>
-<summary><b>🔍 更多技术徽章</b></summary>
-<br/>
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white&labelColor=1E293B)
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white&labelColor=1E293B)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white&labelColor=1E293B)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black&labelColor=1E293B)
-![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black&labelColor=1E293B)
-![Vue](https://img.shields.io/badge/Vue-4FC08D?style=for-the-badge&logo=vuedotjs&logoColor=white&labelColor=1E293B)
-![Nuxt](https://img.shields.io/badge/Nuxt-00DC82?style=for-the-badge&logo=nuxtdotjs&logoColor=white&labelColor=1E293B)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white&labelColor=1E293B)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white&labelColor=1E293B)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white&labelColor=1E293B)
-![CUDA](https://img.shields.io/badge/CUDA-76B900?style=for-the-badge&logo=nvidia&logoColor=white&labelColor=1E293B)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white&labelColor=1E293B)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black&labelColor=1E293B)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white&labelColor=1E293B)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white&labelColor=1E293B)
-
+  <summary><b>GitHub 活动 · 自动更新</b></summary>
+  <br />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/liangqianxing/liangqianxing/output/github-stats-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/liangqianxing/liangqianxing/output/github-stats-light.svg" />
+    <img width="420" src="https://raw.githubusercontent.com/liangqianxing/liangqianxing/output/github-stats-light.svg" alt="自动更新的公开仓库、关注者、Stars 与 Forks 统计" />
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/liangqianxing/liangqianxing/output/top-languages-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/liangqianxing/liangqianxing/output/top-languages-light.svg" />
+    <img width="420" src="https://raw.githubusercontent.com/liangqianxing/liangqianxing/output/top-languages-light.svg" alt="公开原创仓库的代码语言分布" />
+  </picture>
+  <br /><br />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/liangqianxing/liangqianxing/output/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/liangqianxing/liangqianxing/output/github-contribution-grid-snake.svg" />
+    <img width="100%" src="https://raw.githubusercontent.com/liangqianxing/liangqianxing/output/github-contribution-grid-snake.svg" alt="GitHub 贡献贪吃蛇动画" />
+  </picture>
 </details>
 
-</div>
+---
 
-<img width="100%" height="12" src="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@main/assets/divider.svg" alt="" />
-
-<h2 align="center">🚀 精选项目</h2>
-<p align="center"><sub>FEATURED PROJECTS</sub></p>
-
-<h3 align="center">🌟 产品与网站</h3>
-
-<table>
-  <tr>
-    <td width="33%" align="center">
-      <a href="https://deepscientist.cc">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@output/product-deepscientist-dark.svg" />
-          <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@output/product-deepscientist-light.svg" />
-          <img width="270" height="158" loading="lazy" src="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@output/product-deepscientist-dark.svg" alt="DeepScientist" />
-        </picture>
-      </a>
-    </td>
-    <td width="33%" align="center">
-      <a href="https://liangqianxing.github.io">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@output/product-nova-blog-dark.svg" />
-          <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@output/product-nova-blog-light.svg" />
-          <img width="270" height="158" loading="lazy" src="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@output/product-nova-blog-dark.svg" alt="Nova Blog" />
-        </picture>
-      </a>
-    </td>
-    <td width="33%" align="center">
-      <a href="https://github.com/liangqianxing/ml-research-plotting-tutorial">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@output/product-ml-plotting-dark.svg" />
-          <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@output/product-ml-plotting-light.svg" />
-          <img width="270" height="158" loading="lazy" src="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@output/product-ml-plotting-dark.svg" alt="ML 科研绘图教程" />
-        </picture>
-      </a>
-    </td>
-  </tr>
-</table>
-
-<h3 align="center">🧩 开源仓库</h3>
-
-<table>
-  <tr>
-    <td width="50%" align="center">
-      <a href="https://github.com/liangqianxing/hexo-theme-nova">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@output/repo-hexo-theme-nova-dark.svg" />
-          <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@output/repo-hexo-theme-nova-light.svg" />
-          <img width="400" height="141" loading="lazy" src="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@output/repo-hexo-theme-nova-dark.svg" alt="hexo-theme-nova" />
-        </picture>
-      </a>
-    </td>
-    <td width="50%" align="center">
-      <a href="https://github.com/liangqianxing/agentmem">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@output/repo-agentmem-dark.svg" />
-          <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@output/repo-agentmem-light.svg" />
-          <img width="400" height="141" loading="lazy" src="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@output/repo-agentmem-dark.svg" alt="agentmem" />
-        </picture>
-      </a>
-    </td>
-  </tr>
-  <tr><td colspan="2"><br/></td></tr>
-  <tr>
-    <td width="50%" align="center">
-      <a href="https://github.com/liangqianxing/fast-llm-kernels">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@output/repo-fast-llm-kernels-dark.svg" />
-          <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@output/repo-fast-llm-kernels-light.svg" />
-          <img width="400" height="141" loading="lazy" src="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@output/repo-fast-llm-kernels-dark.svg" alt="fast-llm-kernels" />
-        </picture>
-      </a>
-    </td>
-    <td width="50%" align="center">
-      <a href="https://github.com/liangqianxing/ToyOS">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@output/repo-toyos-dark.svg" />
-          <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@output/repo-toyos-light.svg" />
-          <img width="400" height="141" loading="lazy" src="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@output/repo-toyos-dark.svg" alt="ToyOS" />
-        </picture>
-      </a>
-    </td>
-  </tr>
-</table>
-
-<p align="center"><a href="https://github.com/liangqianxing?tab=repositories">浏览全部仓库 →</a></p>
-
-<img width="100%" height="12" src="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@main/assets/divider.svg" alt="" />
-
-<h2 align="center">📊 GitHub 数据</h2>
-<p align="center"><sub>GITHUB STATISTICS</sub></p>
-
-<div align="center">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@output/github-stats-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@output/github-stats-light.svg" />
-  <img width="420" height="168" loading="lazy" src="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@output/github-stats-dark.svg" alt="GitHub stats" />
-</picture>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@output/top-languages-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@output/top-languages-light.svg" />
-  <img width="420" height="168" loading="lazy" src="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@output/top-languages-dark.svg" alt="Top languages" />
-</picture>
-
-<br/><br/>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=liangqianxing&theme=github-dark-blue&hide_border=true" />
-  <source media="(prefers-color-scheme: light)" srcset="https://streak-stats.demolab.com?user=liangqianxing&theme=default&hide_border=true" />
-  <img alt="GitHub Streak" src="https://streak-stats.demolab.com?user=liangqianxing&theme=github-dark-blue&hide_border=true" />
-</picture>
-
-<br/><br/>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=liangqianxing&bg_color=0F172A&color=94A3B8&line=38BDF8&point=F472B6&area=true&area_color=38BDF8&hide_border=true" />
-  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=liangqianxing&bg_color=F6F8FA&color=334155&line=6366F1&point=F472B6&area=true&area_color=C7D2FE&hide_border=true" />
-  <img width="820" loading="lazy" alt="Activity graph" src="https://github-readme-activity-graph.vercel.app/graph?username=liangqianxing&bg_color=0F172A&color=94A3B8&line=38BDF8&point=F472B6&area=true&area_color=38BDF8&hide_border=true" />
-</picture>
-
-</div>
-
-<img width="100%" height="12" src="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@main/assets/divider.svg" alt="" />
-
-<h2 align="center">🐍 贡献贪吃蛇</h2>
-<p align="center"><sub>CONTRIBUTION SNAKE</sub></p>
-
-<div align="center">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@output/github-contribution-grid-snake.svg" />
-  <img width="800" height="175" loading="lazy" alt="GitHub contribution grid snake animation" src="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@output/github-contribution-grid-snake.svg" />
-</picture>
-
-</div>
-
-<img width="100%" height="12" src="https://cdn.jsdelivr.net/gh/liangqianxing/liangqianxing@main/assets/divider.svg" alt="" />
-
-<div align="center">
-
-[![GitHub](https://img.shields.io/badge/GitHub-1E293B?style=for-the-badge&logo=github&logoColor=white)](https://github.com/liangqianxing)
-[![博客](https://img.shields.io/badge/📝_博客-FF6B6B?style=for-the-badge&labelColor=1E293B)](https://liangqianxing.github.io)
-[![DeepScientist](https://img.shields.io/badge/🔬_DeepScientist-2ED3B7?style=for-the-badge&labelColor=1E293B)](https://deepscientist.cc)
-[![访客](https://komarev.com/ghpvc/?username=liangqianxing&style=for-the-badge&color=F59E0B&labelColor=1E293B&label=访客)](https://github.com/liangqianxing)
-
-<br/>
-
-<sub>感谢来访 ✨ 更多笔记和项目见 <a href="https://liangqianxing.github.io">liangqianxing.github.io</a></sub>
-
-<br/><br/>
-
-</div>
-
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=120&section=footer" alt="footer" />
+<p align="center">
+  <sub>欢迎交流科研智能体、推理系统与开发者工具。更多笔记与项目见 <a href="https://liangqianxing.github.io">liangqianxing.github.io</a>。</sub>
+</p>
