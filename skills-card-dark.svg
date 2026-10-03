@@ -1,0 +1,44 @@
+<svg width="820" height="122" viewBox="0 0 820 122" fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
+  
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1220"/>
+      <stop offset="1" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#38BDF8"/>
+      <stop offset="0.55" stop-color="#A78BFA"/>
+      <stop offset="1" stop-color="#F472B6"/>
+    </linearGradient>
+    <linearGradient id="border" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#38BDF8" stop-opacity="0.75"/>
+      <stop offset="0.55" stop-color="#A78BFA" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#F472B6" stop-opacity="0.75"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="translate(0.82 0.08) rotate(125) scale(1.2)">
+      <stop offset="0" stop-color="#38BDF8" stop-opacity="0.20"/>
+      <stop offset="0.5" stop-color="#A78BFA" stop-opacity="0.13"/>
+      <stop offset="1" stop-color="#F472B6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect x="0" y="0" width="820" height="122" rx="20" fill="url(#bg)"/>
+  <rect x="1.25" y="1.25" width="817.5" height="119.5" rx="18.75" fill="none" stroke="url(#border)" stroke-width="1.5"/>
+  <ellipse cx="672.4" cy="12.200000000000001" rx="278.8" ry="67.10000000000001" fill="url(#glow)" opacity="0.9"/>
+  
+  <text x="28" y="40" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="15" font-weight="750" fill="#F8FAFC">🐍 语言</text>
+  <rect x="30" y="50" width="32" height="3" rx="1.5" fill="#38BDF8"/>
+  <text x="28" y="74" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="500" fill="#64748B">Python · C++</text><text x="28" y="94" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="500" fill="#64748B">TypeScript · JavaScript</text>
+  <line x1="212" y1="24" x2="212" y2="98" stroke="#1E293B" stroke-width="1"/>
+  <text x="227" y="40" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="15" font-weight="750" fill="#F8FAFC">🎨 前端</text>
+  <rect x="229" y="50" width="32" height="3" rx="1.5" fill="#F472B6"/>
+  <text x="227" y="74" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="500" fill="#64748B">React · Vue</text><text x="227" y="94" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="500" fill="#64748B">Nuxt · UI 工程化</text>
+  <line x1="411" y1="24" x2="411" y2="98" stroke="#1E293B" stroke-width="1"/>
+  <text x="426" y="40" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="15" font-weight="750" fill="#F8FAFC">⚙️ 后端 &amp; AI</text>
+  <rect x="428" y="50" width="32" height="3" rx="1.5" fill="#34D399"/>
+  <text x="426" y="74" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="500" fill="#64748B">Node.js · FastAPI</text><text x="426" y="94" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="500" fill="#64748B">PyTorch · LLM 推理</text>
+  <line x1="610" y1="24" x2="610" y2="98" stroke="#1E293B" stroke-width="1"/>
+  <text x="625" y="40" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="15" font-weight="750" fill="#F8FAFC">🔧 工程化</text>
+  <rect x="627" y="50" width="32" height="3" rx="1.5" fill="#A78BFA"/>
+  <text x="625" y="74" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="500" fill="#64748B">Docker · Linux</text><text x="625" y="94" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="500" fill="#64748B">Git · GitHub Actions</text>
+  
+</svg>
