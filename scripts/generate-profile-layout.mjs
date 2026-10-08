@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { createHash } from "node:crypto";
 import { fileURLToPath } from "node:url";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -262,17 +263,35 @@ const journey = ({ theme, mobile }) => {
   return shell({ width, height, theme, title: "教育与经历", description: experiences.map((experience) => `${experience.school}：${experience.detail}，${experience.date}`).join("；"), body });
 };
 
+const journeyImages = new Map();
 for (const theme of ["light", "dark"]) {
   for (const mobile of [false, true]) {
     const suffix = `${mobile ? "mobile-" : ""}${theme}`;
     fs.writeFileSync(path.join(assets, `profile-header-${suffix}.svg`), header({ theme, mobile }));
-    fs.writeFileSync(path.join(assets, `journey-${suffix}.svg`), journey({ theme, mobile }));
+    const journeySvg = journey({ theme, mobile });
+    const version = createHash("sha256").update(journeySvg).digest("hex").slice(0, 10);
+    const journeyFile = `journey-${suffix}-${version}.svg`;
+    fs.writeFileSync(path.join(assets, journeyFile), journeySvg);
+    journeyImages.set(suffix, journeyFile);
     for (const item of research) {
       fs.writeFileSync(path.join(assets, `research-${item.id}-${suffix}.svg`), card({ item, theme, mobile }));
     }
     for (const item of projects) {
       fs.writeFileSync(path.join(assets, `project-${item.id}-${suffix}.svg`), card({ item, theme, mobile }));
     }
+  }
+}
+
+const readmePath = path.join(root, "README.md");
+const readme = fs.readFileSync(readmePath, "utf8");
+fs.writeFileSync(readmePath, readme.replace(
+  /assets\/journey-((?:mobile-)?(?:light|dark))(?:-[a-f0-9]{10})?\.svg/g,
+  (_, suffix) => `assets/${journeyImages.get(suffix)}`,
+));
+const activeJourneyFiles = new Set(journeyImages.values());
+for (const filename of fs.readdirSync(assets)) {
+  if (/^journey-(?:mobile-)?(?:light|dark)(?:-[a-f0-9]{10})?\.svg$/.test(filename) && !activeJourneyFiles.has(filename)) {
+    fs.unlinkSync(path.join(assets, filename));
   }
 }
 

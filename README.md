@@ -40,10 +40,10 @@
 ### 03 / Journey · 教育与经历
 
 <picture>
-  <source media="(max-width: 960px) and (prefers-color-scheme: dark)" srcset="assets/journey-mobile-dark.svg" />
-  <source media="(max-width: 960px) and (prefers-color-scheme: light)" srcset="assets/journey-mobile-light.svg" />
-  <source media="(prefers-color-scheme: dark)" srcset="assets/journey-dark.svg" />
-  <img width="100%" src="assets/journey-light.svg" alt="华东师范大学：软件工程已保研录取，2027–2030，2027 年入学；新疆大学：软件工程本科，2023–2027，曾于中南大学交换；美团：开发实习，2026.06 至今；西湖大学 NLP 实验室：访问学生，2025.12–2026.03" />
+  <source media="(max-width: 960px) and (prefers-color-scheme: dark)" srcset="assets/journey-mobile-dark-0add2de065.svg" />
+  <source media="(max-width: 960px) and (prefers-color-scheme: light)" srcset="assets/journey-mobile-light-898f3a8ab5.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="assets/journey-dark-5da58de2bc.svg" />
+  <img width="100%" src="assets/journey-light-87dbe887e3.svg" alt="华东师范大学：软件工程已保研录取，2027–2030，2027 年入学；新疆大学：软件工程本科，2023–2027，曾于中南大学交换；美团：开发实习，2026.06 至今；西湖大学 NLP 实验室：访问学生，2025.12–2026.03" />
 </picture>
 
 <details>
