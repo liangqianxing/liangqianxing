@@ -83,7 +83,10 @@
 <details>
   <summary><b>竞赛与 GitHub 活动</b></summary>
   <br />
-  <p>ACM-ICPC 亚洲区域赛铜牌、全国邀请赛银牌、新疆自治区赛金牌；CCPC 全国邀请赛银牌。</p>
+  <p>
+    <b>🏆 ACM-ICPC</b> · 🥉 亚洲区域赛铜牌 · 🥈 全国邀请赛银牌 · 🥇 新疆自治区赛金牌<br />
+    <b>🏆 CCPC</b> · 🥈 全国邀请赛银牌
+  </p>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/liangqianxing/liangqianxing/output/github-stats-dark.svg" />
     <img width="400" src="https://raw.githubusercontent.com/liangqianxing/liangqianxing/output/github-stats-light.svg" alt="自动更新的公开仓库、关注者、Stars 与 Forks 统计" />
