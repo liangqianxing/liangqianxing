@@ -36,7 +36,7 @@ const palette = (dark) =>
         border: "#1E293B",
         title: "#F8FAFC",
         text: "#CBD5E1",
-        dim: "#64748B",
+        dim: "#94A3B8",
         glow: "0.20",
       }
     : {
@@ -46,7 +46,7 @@ const palette = (dark) =>
         border: "#E2E8F0",
         title: "#0F172A",
         text: "#334155",
-        dim: "#94A3B8",
+        dim: "#64748B",
         glow: "0.12",
       };
 
@@ -342,7 +342,7 @@ const renderProductCard = ({ product, dark }) => {
 const experiences = [
   {
     id: "meituan",
-    date: "2026.05 — 至今",
+    date: "2026.06 — 至今",
     role: "美团 · 全栈开发实习生",
     accent: acc.cyan,
     description: "横跨前端、后端与内部工具的产品工程化",

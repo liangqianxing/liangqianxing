@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="340" viewBox="0 0 880 340" fill="none" role="img" aria-labelledby="title description">
+  <title id="title">教育与经历</title>
+  <desc id="description">华东师范大学：软件工程 · 已保研录取（2027 年入学），2027 - 2030；新疆大学：软件工程 · 本科在读 · 曾于中南大学交换学习，2023 - 2027；美团：全栈开发实习生 · Agent 任务编排、沙箱与工具调用，2026.06 - PRESENT；西湖大学：NLP 实验室访问学生 · 科研智能体研发，2025.12 - 2026.03；北京大学：IFlab 科研实习生 · 视频扩散模型推理加速，2025.09 - 2025.12</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="880" y2="340" gradientUnits="userSpaceOnUse"><stop stop-color="#FCFDFF"/><stop offset="1" stop-color="#F1F4FC"/></linearGradient>
+    <linearGradient id="accent"><stop stop-color="#456FC3"/><stop offset="0.55" stop-color="#7855BB"/><stop offset="1" stop-color="#168295"/></linearGradient>
+
+  </defs>
+  <rect x="1" y="1" width="878" height="338" rx="22" fill="url(#background)" stroke="#DEE5F2"/>
+
+      <circle cx="36" cy="34" r="4" fill="#7855BB"/>
+      <text x="58" y="40" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="19" font-weight="650" letter-spacing="0" text-anchor="start" fill="#202B46">华东师范大学</text>
+      <text x="856" y="39" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="400" letter-spacing="0" text-anchor="end" fill="#657594">2027 - 2030</text>
+      <text x="58" y="64" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="14" font-weight="400" letter-spacing="0" text-anchor="start" fill="#485975">软件工程 · 已保研录取（2027 年入学）</text>
+      <path d="M58 82h798" stroke="#DEE5F2"/>
+
+      <circle cx="36" cy="98" r="4" fill="#456FC3"/>
+      <text x="58" y="104" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="19" font-weight="650" letter-spacing="0" text-anchor="start" fill="#202B46">新疆大学</text>
+      <text x="856" y="103" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="400" letter-spacing="0" text-anchor="end" fill="#657594">2023 - 2027</text>
+      <text x="58" y="128" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="14" font-weight="400" letter-spacing="0" text-anchor="start" fill="#485975">软件工程 · 本科在读 · 曾于中南大学交换学习</text>
+      <path d="M58 146h798" stroke="#DEE5F2"/>
+
+      <circle cx="36" cy="162" r="4" fill="#168295"/>
+      <text x="58" y="168" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="19" font-weight="650" letter-spacing="0" text-anchor="start" fill="#202B46">美团</text>
+      <text x="856" y="167" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="400" letter-spacing="0" text-anchor="end" fill="#657594">2026.06 - PRESENT</text>
+      <text x="58" y="192" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="14" font-weight="400" letter-spacing="0" text-anchor="start" fill="#485975">全栈开发实习生 · Agent 任务编排、沙箱与工具调用</text>
+      <path d="M58 210h798" stroke="#DEE5F2"/>
+
+      <circle cx="36" cy="226" r="4" fill="#7855BB"/>
+      <text x="58" y="232" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="19" font-weight="650" letter-spacing="0" text-anchor="start" fill="#202B46">西湖大学</text>
+      <text x="856" y="231" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="400" letter-spacing="0" text-anchor="end" fill="#657594">2025.12 - 2026.03</text>
+      <text x="58" y="256" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="14" font-weight="400" letter-spacing="0" text-anchor="start" fill="#485975">NLP 实验室访问学生 · 科研智能体研发</text>
+      <path d="M58 274h798" stroke="#DEE5F2"/>
+
+      <circle cx="36" cy="290" r="4" fill="#AD5088"/>
+      <text x="58" y="296" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="19" font-weight="650" letter-spacing="0" text-anchor="start" fill="#202B46">北京大学</text>
+      <text x="856" y="295" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="400" letter-spacing="0" text-anchor="end" fill="#657594">2025.09 - 2025.12</text>
+      <text x="58" y="320" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="14" font-weight="400" letter-spacing="0" text-anchor="start" fill="#485975">IFlab 科研实习生 · 视频扩散模型推理加速</text>
+
+</svg>

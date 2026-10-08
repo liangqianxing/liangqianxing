@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="198" viewBox="0 0 360 198" fill="none" role="img" aria-labelledby="title description">
+  <title id="title">ML Figure Lab</title>
+  <desc id="description">RESEARCH TOOLS / SCIENTIFIC FIGURES. 面向机器学习研究者的中文绘图教程。实验图表、论文架构图与可复用绘图方法</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="360" y2="198" gradientUnits="userSpaceOnUse"><stop stop-color="#101827"/><stop offset="1" stop-color="#19223B"/></linearGradient>
+    <linearGradient id="accent"><stop stop-color="#8DB1FF"/><stop offset="0.55" stop-color="#BCA6FF"/><stop offset="1" stop-color="#77D7E6"/></linearGradient>
+
+  </defs>
+  <rect x="1" y="1" width="358" height="196" rx="22" fill="url(#background)" stroke="#2B3A55"/>
+
+    <text x="24" y="33" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="0.5" text-anchor="start" fill="#8DB1FF">RESEARCH TOOLS / SCIENTIFIC FIGURES</text>
+    <text x="23" y="72" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="22" font-weight="700" letter-spacing="-0.4" text-anchor="start" fill="#EEF3FF">ML Figure Lab</text>
+    <g transform="translate(272 24)" stroke="#8DB1FF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.65"><rect x="9" y="10" width="35" height="32" rx="5"/><path d="m14 35 10-11 7 7 5-5 8 9"/><circle cx="34" cy="19" r="3"/></g>
+    <text x="24" y="105" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="14" font-weight="400" letter-spacing="0" text-anchor="start" fill="#BAC7DD">面向机器学习研究者的中文绘图教程</text>
+<text x="24" y="128" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="14" font-weight="400" letter-spacing="0" text-anchor="start" fill="#BAC7DD">实验图表、论文架构图与可复用绘图方法</text>
+    <path d="M24 151h312" stroke="#2B3A55"/>
+    <circle cx="28" cy="173" r="3" fill="#8DB1FF"/>
+    <text x="40" y="177" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11.5" font-weight="500" letter-spacing="0" text-anchor="start" fill="#98A9C3">Scientific Figures · VitePress</text>
+    <text x="335" y="179" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="20" font-weight="400" letter-spacing="0" text-anchor="end" fill="#8DB1FF">↗</text>
+</svg>
