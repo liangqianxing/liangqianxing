@@ -31,17 +31,7 @@
 <a href="https://github.com/LiuMengxuan04/MiniCode"><picture><source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/project-minicode-mobile-dark.svg" /><source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="assets/project-minicode-mobile-light.svg" /><source media="(prefers-color-scheme: dark)" srcset="assets/project-minicode-dark.svg" /><img width="400" src="assets/project-minicode-light.svg" alt="MiniCode：参与核心开发的终端 AI 编程助手，ReAct、工具权限、MCP 与 Skills" /></picture></a>
 </p>
 
-<p>
-<a href="https://github.com/liangqianxing/agentmem"><picture><source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/project-agentmem-mobile-dark.svg" /><source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="assets/project-agentmem-mobile-light.svg" /><source media="(prefers-color-scheme: dark)" srcset="assets/project-agentmem-dark.svg" /><img width="400" src="assets/project-agentmem-light.svg" alt="AgentMem：LLM Agent 推理内存管理，KV Cache 生命周期、CoW 分支、上下文压缩与分层存储" /></picture></a>
-<a href="https://github.com/liangqianxing/fast-llm-kernels"><picture><source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/project-kernels-mobile-dark.svg" /><source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="assets/project-kernels-mobile-light.svg" /><source media="(prefers-color-scheme: dark)" srcset="assets/project-kernels-dark.svg" /><img width="400" src="assets/project-kernels-light.svg" alt="Fast LLM Kernels：RMSNorm 与 residual-add 融合算子，CUDA / PyTorch、数值验证与性能分析" /></picture></a>
-</p>
-
-<p>
-<a href="https://github.com/liangqianxing/ml-research-plotting-tutorial"><picture><source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/project-figurelab-mobile-dark.svg" /><source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="assets/project-figurelab-mobile-light.svg" /><source media="(prefers-color-scheme: dark)" srcset="assets/project-figurelab-dark.svg" /><img width="400" src="assets/project-figurelab-light.svg" alt="ML Figure Lab：面向机器学习研究者的中文绘图教程，实验图表、论文架构图与可复用绘图方法" /></picture></a>
-<a href="https://github.com/liangqianxing/hexo-theme-nova"><picture><source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/project-nova-mobile-dark.svg" /><source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="assets/project-nova-mobile-light.svg" /><source media="(prefers-color-scheme: dark)" srcset="assets/project-nova-dark.svg" /><img width="400" src="assets/project-nova-light.svg" alt="Hexo Theme Nova：融合学术主页与博客的 Hexo 主题，深浅色模式、文章目录与响应式布局" /></picture></a>
-</p>
-
-[DeepScientist 官网 ↗](https://deepscientist.cc) &nbsp; · &nbsp; [ML Figure Lab 在线阅读 ↗](https://liangqianxing.github.io/ml-research-plotting-tutorial/)
+[DeepScientist 官网 ↗](https://deepscientist.cc)
 
 也在做系统方向的学习项目：[ToyOS](https://github.com/liangqianxing/ToyOS) · 从零实现 RISC-V 小型内核。
 
