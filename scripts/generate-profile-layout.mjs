@@ -5,7 +5,7 @@ import { fileURLToPath } from "node:url";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const assets = path.join(root, "assets");
 const avatar = fs.readFileSync(path.join(assets, "avatar.png")).toString("base64");
-const logos = Object.fromEntries(["ecnu", "xju", "meituan", "westlake", "pku"].map((id) => [
+const logos = Object.fromEntries(["ecnu", "xju", "meituan", "westlake"].map((id) => [
   id,
   fs.readFileSync(path.join(assets, "logos", `${id}.png`)).toString("base64"),
 ]));
@@ -239,21 +239,13 @@ const experiences = [
     detail: "NLP 实验室访问学生 · 科研智能体研发",
     mobile: ["NLP 实验室访问学生", "科研智能体研发"],
   },
-  {
-    school: "北京大学",
-    logo: "pku",
-    date: "2025.09 - 2025.12",
-    color: "pink",
-    detail: "IFlab 科研实习生 · 视频扩散模型推理加速",
-    mobile: ["IFlab 科研实习生", "视频扩散模型推理加速"],
-  },
 ];
 
 const journey = ({ theme, mobile }) => {
   const colors = palette(theme === "dark");
   const width = mobile ? 440 : 880;
-  const height = mobile ? 440 : 340;
   const rowHeight = mobile ? 84 : 64;
+  const height = experiences.length * rowHeight + 20;
   const body = experiences.map((experience, index) => {
     const baseline = (mobile ? 34 : 40) + index * rowHeight;
     const titleX = mobile ? 78 : 84;

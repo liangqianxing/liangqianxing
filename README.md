@@ -43,7 +43,7 @@
   <source media="(max-width: 960px) and (prefers-color-scheme: dark)" srcset="assets/journey-mobile-dark.svg" />
   <source media="(max-width: 960px) and (prefers-color-scheme: light)" srcset="assets/journey-mobile-light.svg" />
   <source media="(prefers-color-scheme: dark)" srcset="assets/journey-dark.svg" />
-  <img width="100%" src="assets/journey-light.svg" alt="华东师范大学：软件工程已保研录取，2027–2030，2027 年入学；新疆大学：软件工程本科，2023–2027，曾于中南大学交换；美团：开发实习，2026.06 至今；西湖大学 NLP 实验室：访问学生，2025.12–2026.03；北京大学 IFlab：科研实习，2025.09–2025.12" />
+  <img width="100%" src="assets/journey-light.svg" alt="华东师范大学：软件工程已保研录取，2027–2030，2027 年入学；新疆大学：软件工程本科，2023–2027，曾于中南大学交换；美团：开发实习，2026.06 至今；西湖大学 NLP 实验室：访问学生，2025.12–2026.03" />
 </picture>
 
 <details>
@@ -56,7 +56,6 @@
   | 2023 - 2027 | **新疆大学** · 软件工程本科，曾于中南大学交换学习 |
   | 2026.06 - 至今 | **美团** · 开发实习生，参与 Agent 任务编排、沙箱与工具调用链路 |
   | 2025.12 - 2026.03 | **西湖大学 NLP 实验室** · 访问学生，参与科研智能体研发 |
-  | 2025.09 - 2025.12 | **北京大学 IFlab** · 科研实习生，参与视频扩散模型推理加速 |
 </details>
 
 ### 04 / Toolkit · 常用工具
