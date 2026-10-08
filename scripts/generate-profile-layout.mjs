@@ -5,6 +5,10 @@ import { fileURLToPath } from "node:url";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const assets = path.join(root, "assets");
 const avatar = fs.readFileSync(path.join(assets, "avatar.png")).toString("base64");
+const logos = Object.fromEntries(["ecnu", "xju", "meituan", "westlake", "pku"].map((id) => [
+  id,
+  fs.readFileSync(path.join(assets, "logos", `${id}.png`)).toString("base64"),
+]));
 const font = "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif";
 const mono = "'SFMono-Regular', Consolas, 'Liberation Mono', monospace";
 
@@ -205,6 +209,7 @@ const card = ({ item, theme, mobile }) => {
 const experiences = [
   {
     school: "华东师范大学",
+    logo: "ecnu",
     date: "2027 - 2030",
     color: "violet",
     detail: "软件工程 · 已保研录取（2027 年入学）",
@@ -212,6 +217,7 @@ const experiences = [
   },
   {
     school: "新疆大学",
+    logo: "xju",
     date: "2023 - 2027",
     color: "blue",
     detail: "软件工程 · 本科在读 · 曾于中南大学交换学习",
@@ -219,6 +225,7 @@ const experiences = [
   },
   {
     school: "美团",
+    logo: "meituan",
     date: "2026.06 - PRESENT",
     color: "cyan",
     detail: "全栈开发实习生 · Agent 任务编排、沙箱与工具调用",
@@ -226,6 +233,7 @@ const experiences = [
   },
   {
     school: "西湖大学",
+    logo: "westlake",
     date: "2025.12 - 2026.03",
     color: "violet",
     detail: "NLP 实验室访问学生 · 科研智能体研发",
@@ -233,6 +241,7 @@ const experiences = [
   },
   {
     school: "北京大学",
+    logo: "pku",
     date: "2025.09 - 2025.12",
     color: "pink",
     detail: "IFlab 科研实习生 · 视频扩散模型推理加速",
@@ -247,11 +256,12 @@ const journey = ({ theme, mobile }) => {
   const rowHeight = mobile ? 84 : 64;
   const body = experiences.map((experience, index) => {
     const baseline = (mobile ? 34 : 40) + index * rowHeight;
-    const titleX = mobile ? 40 : 58;
-    const markerX = mobile ? 24 : 36;
-    const accent = colors[experience.color];
+    const titleX = mobile ? 78 : 84;
+    const logoX = mobile ? 20 : 24;
+    const logoY = baseline - 20;
     return `
-      <circle cx="${markerX}" cy="${baseline - 6}" r="4" fill="${accent}"/>
+      <rect x="${logoX}" y="${logoY}" width="42" height="42" rx="11" fill="#FFFFFF" stroke="${colors.border}"/>
+      <image x="${logoX + 5}" y="${logoY + 5}" width="32" height="32" href="data:image/png;base64,${logos[experience.logo]}" aria-hidden="true"/>
       ${text(experience.school, titleX, baseline, mobile ? 18 : 19, colors.title, { weight: 650 })}
       ${text(experience.date, width - 24, baseline - 1, mobile ? 11 : 12, colors.muted, { family: mono, anchor: "end" })}
       ${mobile ? experience.mobile.map((line, lineIndex) => text(line, titleX, baseline + 23 + lineIndex * 19, 13, colors.text)).join("\n") : text(experience.detail, titleX, baseline + 24, 14, colors.text)}
