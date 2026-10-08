@@ -344,10 +344,10 @@ const experiences = [
   {
     id: "meituan",
     date: "2026.06 — 至今",
-    role: "美团 · 全栈开发实习生",
+    role: "美团 · 开发实习生",
     accent: acc.cyan,
     description: "横跨前端、后端与内部工具的产品工程化",
-    tags: [["实习中", acc.pink], ["全栈", acc.cyan]],
+    tags: [["实习中", acc.pink], ["开发", acc.cyan]],
   },
   {
     id: "westlake",

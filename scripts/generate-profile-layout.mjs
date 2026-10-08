@@ -228,8 +228,8 @@ const experiences = [
     logo: "meituan",
     date: "2026.06 - PRESENT",
     color: "cyan",
-    detail: "全栈开发实习生 · Agent 任务编排、沙箱与工具调用",
-    mobile: ["全栈开发实习生", "Agent 任务编排、沙箱与工具调用"],
+    detail: "开发实习生 · Agent 任务编排、沙箱与工具调用",
+    mobile: ["开发实习生", "Agent 任务编排、沙箱与工具调用"],
   },
   {
     school: "西湖大学",
