@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none" role="img" aria-labelledby="title">
+  <title id="title">ReAct</title>
+  <rect x="0.5" y="0.5" width="31" height="31" rx="8" fill="#FFFFFF" stroke="#DEE5F2"/>
+  <g transform="translate(4 4)" stroke="#7855BB" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 8a8 8 0 0 0-14-3L3 8m0-5v5h5M4 16a8 8 0 0 0 14 3l3-3m0 5v-5h-5"/><path d="m10 9 5 3-5 3z" fill="#7855BB" stroke="none"/></g>
+</svg>

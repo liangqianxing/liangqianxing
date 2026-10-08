@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none" role="img" aria-labelledby="title">
+  <title id="title">Vue</title>
+  <rect x="0.5" y="0.5" width="31" height="31" rx="8" fill="#FFFFFF" stroke="#DEE5F2"/>
+  <g transform="translate(4 4)"><path d="M24,1.61H14.06L12,5.16,9.94,1.61H0L12,22.39ZM12,14.08,5.16,2.23H9.59L12,6.41l2.41-4.18h4.43Z" fill="#41B883"/></g>
+</svg>

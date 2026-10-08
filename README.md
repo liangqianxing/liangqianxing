@@ -59,9 +59,25 @@
 
 ### 04 / Toolkit · 常用工具
 
-**Agent / AI** &nbsp; <code>Python</code> <code>PyTorch</code> <code>Transformers</code> <code>ReAct</code> <code>MCP</code> <code>Context Management</code>
+<p>
+<b>Agent / AI</b><br />
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/tool-badges/python-dark.svg" /><img width="89" height="30" src="assets/tool-badges/python-light.svg" alt="Python" /></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/tool-badges/pytorch-dark.svg" /><img width="97" height="30" src="assets/tool-badges/pytorch-light.svg" alt="PyTorch" /></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/tool-badges/transformers-dark.svg" /><img width="136" height="30" src="assets/tool-badges/transformers-light.svg" alt="Transformers" /></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/tool-badges/react-loop-dark.svg" /><img width="81" height="30" src="assets/tool-badges/react-loop-light.svg" alt="ReAct" /></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/tool-badges/mcp-dark.svg" /><img width="66" height="30" src="assets/tool-badges/mcp-light.svg" alt="MCP" /></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/tool-badges/context-dark.svg" /><img width="183" height="30" src="assets/tool-badges/context-light.svg" alt="Context Management" /></picture>
+</p>
 
-**Engineering** &nbsp; <code>TypeScript</code> <code>React / Vue</code> <code>Nuxt</code> <code>FastAPI</code> <code>C++ / CUDA</code> <code>Docker / Linux</code>
+<p>
+<b>Engineering</b><br />
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/tool-badges/typescript-dark.svg" /><img width="120" height="30" src="assets/tool-badges/typescript-light.svg" alt="TypeScript" /></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/tool-badges/react-vue-dark.svg" /><img width="152" height="30" src="assets/tool-badges/react-vue-light.svg" alt="React / Vue" /></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/tool-badges/nuxt-dark.svg" /><img width="74" height="30" src="assets/tool-badges/nuxt-light.svg" alt="Nuxt" /></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/tool-badges/fastapi-dark.svg" /><img width="97" height="30" src="assets/tool-badges/fastapi-light.svg" alt="FastAPI" /></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/tool-badges/cplusplus-cuda-dark.svg" /><img width="144" height="30" src="assets/tool-badges/cplusplus-cuda-light.svg" alt="C++ / CUDA" /></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/tool-badges/docker-linux-dark.svg" /><img width="176" height="30" src="assets/tool-badges/docker-linux-light.svg" alt="Docker / Linux" /></picture>
+</p>
 
 <details>
   <summary><b>竞赛与 GitHub 活动</b></summary>
