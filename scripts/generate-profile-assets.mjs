@@ -144,9 +144,10 @@ const defs = ({ dark }) => {
 const shell = ({ width, height, dark, body }) => `
 <svg width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
   ${defs({ dark })}
+  <defs><clipPath id="card-clip"><rect width="${width}" height="${height}" rx="20"/></clipPath></defs>
   <rect x="0" y="0" width="${width}" height="${height}" rx="20" fill="url(#bg)"/>
   <rect x="1.25" y="1.25" width="${width - 2.5}" height="${height - 2.5}" rx="18.75" fill="none" stroke="url(#border)" stroke-width="1.5"/>
-  <ellipse cx="${width * 0.82}" cy="${height * 0.10}" rx="${width * 0.34}" ry="${height * 0.55}" fill="url(#glow)" opacity="${dark ? 0.9 : 0.8}"/>
+  <ellipse cx="${width * 0.82}" cy="${height * 0.10}" rx="${width * 0.34}" ry="${height * 0.55}" fill="url(#glow)" opacity="${dark ? 0.9 : 0.8}" clip-path="url(#card-clip)"/>
   ${body}
 </svg>`.trim();
 
@@ -165,13 +166,13 @@ const renderStatsCard = ({ stats, dark }) => {
   const items = stats.map(([label, value, color], index) => {
     const col = index % 2;
     const row = Math.floor(index / 2);
-    const x = 22 + col * 198;
-    const y = 70 + row * 52;
+    const x = 20 + col * 196;
+    const y = 68 + row * 46;
     return `
-  <rect x="${x}" y="${y - 10}" width="188" height="44" rx="11" fill="${p.card}" stroke="${p.border}" stroke-width="1"/>
-  <rect x="${x + 12}" y="${y + 8}" width="6" height="6" rx="3" fill="${color}"/>
-  <text x="${x + 24}" y="${y + 15}" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10.5" font-weight="600" fill="${p.dim}">${escapeXml(label)}</text>
-  <text x="${x + 12}" y="${y + 30}" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="20" font-weight="750" fill="${p.title}">${formatNumber(value)}</text>`;
+  <rect x="${x}" y="${y}" width="184" height="38" rx="11" fill="${p.card}" stroke="${p.border}" stroke-width="1"/>
+  <rect x="${x + 12}" y="${y + 16}" width="6" height="6" rx="3" fill="${color}"/>
+  <text x="${x + 24}" y="${y + 23}" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="${p.dim}">${escapeXml(label)}</text>
+  <text x="${x + 170}" y="${y + 26}" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="20" font-weight="750" fill="${p.title}">${formatNumber(value)}</text>`;
   }).join("");
 
   return shell({
