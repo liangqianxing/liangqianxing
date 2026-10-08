@@ -37,8 +37,6 @@
 
 [DeepScientist 官网 ↗](https://deepscientist.cc)
 
-也在做系统方向的学习项目：[ToyOS](https://github.com/liangqianxing/ToyOS) · 从零实现 RISC-V 小型内核。
-
 ### 03 / Journey · 教育与经历
 
 <picture>
