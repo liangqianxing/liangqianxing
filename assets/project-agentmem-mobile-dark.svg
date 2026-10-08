@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="198" viewBox="0 0 360 198" fill="none" role="img" aria-labelledby="title description">
+  <title id="title">AgentMem</title>
+  <desc id="description">MEMORY / PERSONAL PROJECT. 面向 LLM Agent 的推理内存管理。KV Cache · CoW 分支 · 上下文压缩</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="360" y2="198" gradientUnits="userSpaceOnUse"><stop stop-color="#101827"/><stop offset="1" stop-color="#19223B"/></linearGradient>
+    <linearGradient id="accent"><stop stop-color="#8DB1FF"/><stop offset="0.55" stop-color="#BCA6FF"/><stop offset="1" stop-color="#77D7E6"/></linearGradient>
+
+  </defs>
+  <rect x="1" y="1" width="358" height="196" rx="22" fill="url(#background)" stroke="#2B3A55"/>
+
+    <text x="24" y="33" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="0.5" text-anchor="start" fill="#77D7E6">MEMORY / PERSONAL PROJECT</text>
+    <text x="23" y="72" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="22" font-weight="700" letter-spacing="-0.4" text-anchor="start" fill="#EEF3FF">AgentMem</text>
+    <g transform="translate(272 24)" stroke="#77D7E6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.65"><rect x="15" y="15" width="24" height="24" rx="6"/><rect x="22" y="22" width="10" height="10" rx="2"/><path d="M21 8v7m12-7v7m-12 24v7m12-7v7M8 21h7M8 33h7m24-12h7m-7 12h7"/></g>
+    <text x="24" y="105" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="14" font-weight="400" letter-spacing="0" text-anchor="start" fill="#BAC7DD">面向 LLM Agent 的推理内存管理</text>
+<text x="24" y="128" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="14" font-weight="400" letter-spacing="0" text-anchor="start" fill="#BAC7DD">KV Cache · CoW 分支 · 上下文压缩</text>
+    <path d="M24 151h312" stroke="#2B3A55"/>
+    <circle cx="28" cy="173" r="3" fill="#77D7E6"/>
+    <text x="40" y="177" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11.5" font-weight="500" letter-spacing="0" text-anchor="start" fill="#98A9C3">Python · Inference Systems</text>
+    <text x="335" y="179" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="20" font-weight="400" letter-spacing="0" text-anchor="end" fill="#77D7E6">↗</text>
+</svg>
