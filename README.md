@@ -84,7 +84,7 @@
   <summary><b>竞赛与 GitHub 活动</b></summary>
   <br />
   <p>
-    <img width="28" height="28" src="assets/logos/acm.svg" alt="ACM Logo" /> <b>ACM-ICPC</b> · 🥉 亚洲区域赛铜牌 · 🥈 全国邀请赛银牌 · 🥇 新疆自治区赛金牌<br />
+    <img width="48" height="28" src="assets/logos/icpc.svg" alt="ICPC 蓝橙红三色 Logo" /> <b>ACM-ICPC</b> · 🥉 亚洲区域赛铜牌 · 🥈 全国邀请赛银牌 · 🥇 新疆自治区赛金牌<br />
     <b>CCPC</b> · 🥈 全国邀请赛银牌
   </p>
   <picture>
