@@ -83,10 +83,13 @@
 <details>
   <summary><b>竞赛与 GitHub 活动</b></summary>
   <br />
-  <p>
-    <img width="48" height="28" src="assets/logos/icpc.svg" alt="ICPC 蓝橙红三色 Logo" /> <b>ACM-ICPC</b> · 🥉 亚洲区域赛铜牌 · 🥈 全国邀请赛银牌 · 🥇 新疆自治区赛金牌<br />
-    <b>CCPC</b> · 🥈 全国邀请赛银牌
-  </p>
+  <picture>
+    <source media="(max-width: 960px) and (prefers-color-scheme: dark)" srcset="assets/competition-honors-mobile-dark-176ded24a3.svg" />
+    <source media="(max-width: 960px) and (prefers-color-scheme: light)" srcset="assets/competition-honors-mobile-light-4cc03853a9.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="assets/competition-honors-dark-9cb34c3e62.svg" />
+    <img width="100%" src="assets/competition-honors-light-af72375fa1.svg" alt="ICPC 蓝橙红三色 Logo；ACM-ICPC：亚洲区域赛铜牌、全国邀请赛银牌、新疆自治区赛金牌；CCPC：全国邀请赛银牌" />
+  </picture>
+  <br /><br />
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/liangqianxing/liangqianxing/output/github-stats-dark.svg" />
     <img width="400" src="https://raw.githubusercontent.com/liangqianxing/liangqianxing/output/github-stats-light.svg" alt="自动更新的公开仓库、关注者、Stars 与 Forks 统计" />
