@@ -1,9 +1,11 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { palette, versionedAssets } from "./profile-style.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const assets = path.join(root, "assets");
+const outputs = versionedAssets(root);
 const font = "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif";
 const logo = (id) => fs.readFileSync(path.join(assets, "logos", `${id}.png`)).toString("base64");
 const items = [
@@ -14,9 +16,7 @@ const items = [
 
 for (const theme of ["light", "dark"]) {
   const dark = theme === "dark";
-  const colors = dark
-    ? { bg: "#19223B", border: "#2B3A55", title: "#EEF3FF", text: "#BAC7DD", blue: "#8DB1FF", cyan: "#77D7E6", violet: "#BCA6FF" }
-    : { bg: "#F1F4FC", border: "#DEE5F2", title: "#202B46", text: "#485975", blue: "#456FC3", cyan: "#168295", violet: "#7855BB" };
+  const colors = palette(dark);
   for (const item of items) {
     const accent = colors[item.color];
     const icon = item.logo
@@ -25,12 +25,13 @@ for (const theme of ["light", "dark"]) {
     const description = item.detail ? `${item.title} · ${item.detail}` : item.title;
     const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${item.width}" height="60" viewBox="0 0 ${item.width} 60" fill="none" role="img" aria-labelledby="title">
   <title id="title">${description}</title>
-  <rect x="0.5" y="0.5" width="${item.width - 1}" height="59" rx="13" fill="${colors.bg}" stroke="${colors.border}"/>
+  <rect x="0.5" y="0.5" width="${item.width - 1}" height="59" rx="13" fill="${colors.background}" stroke="${colors.border}"/>
   ${icon}
   <text x="54" y="${item.detail ? 25 : 36}" font-family="${font}" font-size="${item.detail ? 16 : 17}" font-weight="650" fill="${colors.title}">${item.title}</text>
   ${item.detail ? `<text x="54" y="46" font-family="${font}" font-size="15" font-weight="500" fill="${colors.text}">${item.detail}</text>` : ""}
 </svg>\n`;
-    fs.writeFileSync(path.join(assets, `profile-status-${item.id}-${theme}.svg`), svg.replace(/[ \t]+\n/g, "\n"));
+    outputs.write(`assets/profile-status-${item.id}-${theme}.svg`, svg.replace(/[ \t]+\n/g, "\n"));
   }
 }
+outputs.finish();
 console.log("Generated profile status badges in light and dark themes.");

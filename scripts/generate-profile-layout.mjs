@@ -1,11 +1,11 @@
 import fs from "node:fs";
 import path from "node:path";
-import { createHash } from "node:crypto";
+import { palette, versionedAssets } from "./profile-style.mjs";
 import { fileURLToPath } from "node:url";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const assets = path.join(root, "assets");
-const avatar = fs.readFileSync(path.join(assets, "avatar.png")).toString("base64");
+const artwork = Object.fromEntries(["light", "dark"].map((theme) => [theme, fs.readFileSync(path.join(assets, `profile-art-${theme}.webp`)).toString("base64")]));
 const logos = Object.fromEntries(["ecnu", "xju", "meituan", "westlake"].map((id) => [
   id,
   fs.readFileSync(path.join(assets, "logos", `${id}.png`)).toString("base64"),
@@ -19,38 +19,14 @@ const escapeXml = (value) => String(value)
   .replace(/>/g, "&gt;")
   .replace(/"/g, "&quot;");
 
-const palette = (dark) => dark ? {
-  background: "#101827",
-  tint: "#19223B",
-  border: "#2B3A55",
-  title: "#EEF3FF",
-  text: "#BAC7DD",
-  muted: "#98A9C3",
-  blue: "#8DB1FF",
-  violet: "#BCA6FF",
-  cyan: "#77D7E6",
-  pink: "#F0ACD1",
-} : {
-  background: "#FCFDFF",
-  tint: "#F1F4FC",
-  border: "#DEE5F2",
-  title: "#202B46",
-  text: "#485975",
-  muted: "#657594",
-  blue: "#456FC3",
-  violet: "#7855BB",
-  cyan: "#168295",
-  pink: "#AD5088",
-};
-
 const text = (content, x, y, size, color, options = {}) => {
   const { weight = 400, spacing = 0, anchor = "start", family = font } = options;
   return `<text x="${x}" y="${y}" font-family="${family}" font-size="${size}" font-weight="${weight}" letter-spacing="${spacing}" text-anchor="${anchor}" fill="${color}">${escapeXml(content)}</text>`;
 };
 
-const shell = ({ width, height, theme, title, description = title, body, definitions = "" }) => {
+const shell = ({ width, height, theme, title, description = title, body, definitions = "", spaceBelow = 0 }) => {
   const colors = palette(theme === "dark");
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" fill="none" role="img" aria-labelledby="title description">
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height + spaceBelow}" viewBox="0 0 ${width} ${height + spaceBelow}" fill="none" role="img" aria-labelledby="title description">
   <title id="title">${escapeXml(title)}</title>
   <desc id="description">${escapeXml(description)}</desc>
   <defs>
@@ -58,7 +34,7 @@ const shell = ({ width, height, theme, title, description = title, body, definit
     <linearGradient id="accent"><stop stop-color="${colors.blue}"/><stop offset="0.55" stop-color="${colors.violet}"/><stop offset="1" stop-color="${colors.cyan}"/></linearGradient>
     ${definitions}
   </defs>
-  <rect x="1" y="1" width="${width - 2}" height="${height - 2}" rx="22" fill="url(#background)" stroke="${colors.border}"/>
+  <rect x="1" y="1" width="${width - 2}" height="${height - 2}" rx="18" fill="${colors.background}" stroke="${colors.border}"/>
   ${body}
 </svg>\n`.replace(/[ \t]+\n/g, "\n");
 };
@@ -68,38 +44,32 @@ const chip = (label, x, y, width, color, size = 12) => `<rect x="${x}" y="${y}" 
 const header = ({ theme, mobile }) => {
   const colors = palette(theme === "dark");
   const width = mobile ? 440 : 880;
-  const height = mobile ? 266 : 288;
-  const avatarSize = mobile ? 96 : 148;
-  const avatarX = mobile ? 317 : 661;
-  const avatarY = mobile ? 39 : 60;
-  const centerX = avatarX + avatarSize / 2;
-  const centerY = avatarY + avatarSize / 2;
+  const height = mobile ? 280 : 306;
   const margin = mobile ? 24 : 40;
-  const badgeY = mobile ? 194 : 214;
-  const illustration = `
-    <circle cx="${centerX}" cy="${centerY}" r="${avatarSize * 0.63}" fill="${colors.violet}" fill-opacity="0.05"/>
-    <circle cx="${centerX}" cy="${centerY}" r="${avatarSize * 0.64}" stroke="${colors.violet}" stroke-opacity="0.25" stroke-dasharray="3 7"/>
-    <circle cx="${centerX}" cy="${centerY}" r="${avatarSize * 0.53}" fill="${colors.background}"/>
-    <image x="${avatarX}" y="${avatarY}" width="${avatarSize}" height="${avatarSize}" href="data:image/png;base64,${avatar}"/>
-    ${mobile ? "" : `
-      <path d="M610 93h32M811 165h31M709 37v16" stroke="${colors.border}" stroke-width="1.5"/>
-      <circle cx="608" cy="93" r="4" fill="${colors.cyan}"/>
-      <circle cx="845" cy="165" r="4" fill="${colors.violet}"/>
-      <circle cx="709" cy="34" r="4" fill="${colors.pink}"/>
-      <rect x="624" y="231" width="222" height="28" rx="9" fill="${colors.background}" stroke="${colors.border}"/>
-      ${text("plan  →  act  →  verify", 735, 250, 11.5, colors.muted, { anchor: "middle", family: mono })}
-    `}`;
+  const imageX = mobile ? 255 : 440;
+  const imageY = mobile ? 38 : 8;
+  const imageWidth = mobile ? 180 : 432;
+  const imageHeight = mobile ? 174 : 290;
   const body = `
-    <path d="M24 1h${width - 48}" stroke="url(#accent)" stroke-width="2" stroke-opacity="0.7"/>
-    ${text("LIANGQIANXING / DEV & RESEARCH", margin, mobile ? 32 : 43, mobile ? 10.5 : 11, colors.muted, { weight: 600, spacing: mobile ? 0.7 : 1.5, family: mono })}
-    ${text("Enhao Gu", margin - 2, mobile ? 91 : 115, mobile ? 41 : 60, colors.title, { weight: 750, spacing: -2 })}
-    ${text("古恩豪", margin, mobile ? 125 : 151, mobile ? 17 : 20, colors.text, { weight: 600, spacing: 2 })}
-    ${text("科研智能体、推理系统、开发者工具。", margin, mobile ? 172 : 185, mobile ? 14 : 15, colors.text)}
-    ${chip("AI4Science", margin, badgeY, mobile ? 105 : 112, colors.blue)}
-    ${chip("LLM Agents", margin + (mobile ? 115 : 124), badgeY, mobile ? 112 : 120, colors.violet)}
-    ${chip("AI Infra", margin + (mobile ? 237 : 256), badgeY, 86, colors.cyan)}
-    ${illustration}`;
-  return shell({ width, height, theme, title: "古恩豪 · Enhao Gu", description: "AI4Science, LLM Agents and AI Infrastructure. Research agents, inference systems and developer tools.", body });
+    <g clip-path="url(#header-clip)">
+      <rect width="${width}" height="${height}" fill="${theme === "dark" ? "#121C2B" : "#F7F6F3"}"/>
+      <image x="${imageX}" y="${imageY}" width="${imageWidth}" height="${imageHeight}" preserveAspectRatio="xMidYMid slice" href="data:image/webp;base64,${artwork[theme]}" mask="url(#art-fade)"/>
+      <path d="M${margin} ${mobile ? 40 : 46}h20" stroke="${colors.cyan}" stroke-width="3" stroke-linecap="round"/>
+      ${text("LIANGQIANXING / DEV & RESEARCH", margin + 30, mobile ? 44 : 50, mobile ? 10.5 : 11, colors.muted, { weight: 600, spacing: mobile ? 0.4 : 0.8, family: mono })}
+      ${text("Enhao Gu", margin - 2, mobile ? 108 : 129, mobile ? 43 : 62, colors.title, { weight: 750, spacing: -2 })}
+      ${text("古恩豪", margin, mobile ? 143 : 166, mobile ? 18 : 20, colors.text, { weight: 600, spacing: 2 })}
+      ${text("科研智能体、推理系统、开发者工具。", margin, 205, 16, colors.text)}
+      ${chip("AI4Science", margin, mobile ? 226 : 236, 108, colors.blue, 12.5)}
+      ${chip("LLM Agents", margin + 118, mobile ? 226 : 236, 114, colors.violet, 12.5)}
+      ${chip("AI Infra", margin + 242, mobile ? 226 : 236, 88, colors.blue, 12.5)}
+    </g>`;
+  const definitions = `
+    <clipPath id="header-clip"><rect x="1" y="1" width="${width - 2}" height="${height - 2}" rx="18"/></clipPath>
+    <linearGradient id="art-opacity"><stop stop-color="#000000"/><stop offset="${mobile ? "0.2" : "0.12"}" stop-color="#FFFFFF"/><stop offset="0.88" stop-color="#FFFFFF"/><stop offset="1" stop-color="#000000"/></linearGradient>
+    <linearGradient id="art-vertical" x2="0" y2="1"><stop stop-color="#000000"/><stop offset="0.09" stop-color="#FFFFFF"/><stop offset="0.86" stop-color="#FFFFFF"/><stop offset="1" stop-color="#000000"/></linearGradient>
+    <mask id="vertical-fade"><rect x="${imageX}" y="${imageY}" width="${imageWidth}" height="${imageHeight}" fill="url(#art-vertical)"/></mask>
+    <mask id="art-fade"><rect x="${imageX}" y="${imageY}" width="${imageWidth}" height="${imageHeight}" fill="url(#art-opacity)" mask="url(#vertical-fade)"/></mask>`;
+  return shell({ width, height, theme, title: "古恩豪 · Enhao Gu", description: "AI4Science, LLM Agents and AI Infrastructure. Research agents, inference systems and developer tools.", body, definitions });
 };
 
 const glyphs = {
@@ -194,17 +164,24 @@ const projects = [
 const card = ({ item, theme, mobile }) => {
   const colors = palette(theme === "dark");
   const width = mobile ? 360 : 440;
+  const height = mobile ? 222 : 210;
   const accent = colors[item.color];
+  const labelY = mobile ? 70 : 38;
+  const titleY = mobile ? 41 : 78;
+  const lineY = mobile ? 111 : 117;
+  const ruleY = mobile ? 172 : 160;
+  const footerY = mobile ? 199 : 186;
   const body = `
-    ${text(item.label, 24, 33, 10.5, accent, { weight: 600, spacing: 0.5, family: mono })}
-    ${text(item.name, 23, 72, mobile ? 22 : 24, colors.title, { weight: 700, spacing: -0.4 })}
-    ${icon(item.icon, accent, width)}
-    ${item.lines.map((line, index) => text(line, 24, 105 + index * 23, 14, colors.text)).join("\n")}
-    <path d="M24 151h${width - 48}" stroke="${colors.border}"/>
-    <circle cx="28" cy="173" r="3" fill="${accent}"/>
-    ${text(item.footer, 40, 177, 11.5, colors.muted, { weight: 500 })}
-    ${text("↗", width - 25, 179, 20, accent, { anchor: "end" })}`;
-  return shell({ width, height: 198, theme, title: item.name, description: `${item.label}. ${item.lines.join("。")}`, body });
+    <path d="M24 1h${width - 48}" stroke="${accent}" stroke-width="2" stroke-opacity="0.55"/>
+    ${text(item.label, 24, labelY, mobile ? 11.5 : 10.8, accent, { weight: 600, spacing: 0.1, family: mono })}
+    ${text(item.name, 23, titleY, mobile ? 24 : 27, colors.title, { weight: 700, spacing: -0.5 })}
+    ${mobile ? "" : icon(item.icon, accent, width)}
+    ${item.lines.map((line, index) => text(line, 24, lineY + index * (mobile ? 27 : 24), mobile ? 16 : 15.5, colors.text)).join("\n")}
+    <path d="M24 ${ruleY}h${width - 48}" stroke="${colors.border}"/>
+    <circle cx="28" cy="${footerY - 4}" r="3" fill="${accent}"/>
+    ${text(item.footer, 40, footerY, mobile ? 12.5 : 12, colors.muted, { weight: 500 })}
+    ${text("↗", width - 24, footerY + 2, 20, accent, { anchor: "end" })}`;
+  return shell({ width, height, theme, title: item.name, description: `${item.label}. ${item.lines.join("。")}`, body, spaceBelow: mobile ? 10 : 0 });
 };
 
 const experiences = [
@@ -245,7 +222,7 @@ const experiences = [
 const journey = ({ theme, mobile }) => {
   const colors = palette(theme === "dark");
   const width = mobile ? 440 : 880;
-  const rowHeight = mobile ? 84 : 64;
+  const rowHeight = mobile ? 94 : 72;
   const height = experiences.length * rowHeight + 20;
   const body = experiences.map((experience, index) => {
     const baseline = (mobile ? 34 : 40) + index * rowHeight;
@@ -256,43 +233,28 @@ const journey = ({ theme, mobile }) => {
       <rect x="${logoX}" y="${logoY}" width="42" height="42" rx="11" fill="#FFFFFF" stroke="${colors.border}"/>
       <image x="${logoX + 5}" y="${logoY + 5}" width="32" height="32" href="data:image/png;base64,${logos[experience.logo]}" aria-hidden="true"/>
       ${text(experience.school, titleX, baseline, mobile ? 18 : 19, colors.title, { weight: 650 })}
-      ${text(experience.date, width - 24, baseline - 1, mobile ? 11 : 12, colors.muted, { family: mono, anchor: "end" })}
-      ${mobile ? experience.mobile.map((line, lineIndex) => text(line, titleX, baseline + 23 + lineIndex * 19, 13, colors.text)).join("\n") : text(experience.detail, titleX, baseline + 24, 14, colors.text)}
-      ${index < experiences.length - 1 ? `<path d="M${titleX} ${baseline + (mobile ? 57 : 42)}h${width - titleX - 24}" stroke="${colors.border}"/>` : ""}`;
+      ${text(experience.date, width - 24, baseline - 1, mobile ? 12 : 12.5, colors.muted, { family: mono, anchor: "end" })}
+      ${mobile ? experience.mobile.map((line, lineIndex) => text(line, titleX, baseline + 25 + lineIndex * 21, 15.5, colors.text)).join("\n") : text(experience.detail, titleX, baseline + 25, 15, colors.text)}
+      ${index < experiences.length - 1 ? `<path d="M${titleX} ${baseline + (mobile ? 64 : 47)}h${width - titleX - 24}" stroke="${colors.border}"/>` : ""}`;
   }).join("\n");
   return shell({ width, height, theme, title: "教育与经历", description: experiences.map((experience) => `${experience.school}：${experience.detail}，${experience.date}`).join("；"), body });
 };
 
-const journeyImages = new Map();
+const readme = fs.readFileSync(path.join(root, "README.md"), "utf8");
+const visibleProjects = projects.filter((item) => readme.includes(`assets/project-${item.id}-`));
+const outputs = versionedAssets(root);
 for (const theme of ["light", "dark"]) {
   for (const mobile of [false, true]) {
     const suffix = `${mobile ? "mobile-" : ""}${theme}`;
-    fs.writeFileSync(path.join(assets, `profile-header-${suffix}.svg`), header({ theme, mobile }));
-    const journeySvg = journey({ theme, mobile });
-    const version = createHash("sha256").update(journeySvg).digest("hex").slice(0, 10);
-    const journeyFile = `journey-${suffix}-${version}.svg`;
-    fs.writeFileSync(path.join(assets, journeyFile), journeySvg);
-    journeyImages.set(suffix, journeyFile);
+    outputs.write(`assets/profile-header-${suffix}.svg`, header({ theme, mobile }));
+    outputs.write(`assets/journey-${suffix}.svg`, journey({ theme, mobile }));
     for (const item of research) {
-      fs.writeFileSync(path.join(assets, `research-${item.id}-${suffix}.svg`), card({ item, theme, mobile }));
+      outputs.write(`assets/research-${item.id}-${suffix}.svg`, card({ item, theme, mobile }));
     }
-    for (const item of projects) {
-      fs.writeFileSync(path.join(assets, `project-${item.id}-${suffix}.svg`), card({ item, theme, mobile }));
+    for (const item of visibleProjects) {
+      outputs.write(`assets/project-${item.id}-${suffix}.svg`, card({ item, theme, mobile }));
     }
   }
 }
-
-const readmePath = path.join(root, "README.md");
-const readme = fs.readFileSync(readmePath, "utf8");
-fs.writeFileSync(readmePath, readme.replace(
-  /assets\/journey-((?:mobile-)?(?:light|dark))(?:-[a-f0-9]{10})?\.svg/g,
-  (_, suffix) => `assets/${journeyImages.get(suffix)}`,
-));
-const activeJourneyFiles = new Set(journeyImages.values());
-for (const filename of fs.readdirSync(assets)) {
-  if (/^journey-(?:mobile-)?(?:light|dark)(?:-[a-f0-9]{10})?\.svg$/.test(filename) && !activeJourneyFiles.has(filename)) {
-    fs.unlinkSync(path.join(assets, filename));
-  }
-}
-
-console.log(`Generated profile layout: 4 headers, 4 timelines, ${(research.length + projects.length) * 4} research/project cards.`);
+outputs.finish();
+console.log(`Generated profile layout: 4 headers, 4 timelines, ${(research.length + visibleProjects.length) * 4} existing research/project cards.`);

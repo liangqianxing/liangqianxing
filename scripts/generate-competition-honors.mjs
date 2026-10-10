@@ -1,10 +1,11 @@
 import fs from "node:fs";
 import path from "node:path";
-import { createHash } from "node:crypto";
 import { fileURLToPath } from "node:url";
+import { palette, versionedAssets } from "./profile-style.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const assets = path.join(root, "assets");
+const outputs = versionedAssets(root);
 const font = "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif";
 const logo = fs.readFileSync(path.join(assets, "logos", "icpc.svg"), "utf8")
   .replace(/^[\s\S]*?<svg[^>]*>/, "")
@@ -17,10 +18,6 @@ const awards = [
   { contest: "ACM-ICPC", event: "新疆自治区赛", rank: "金牌", metal: "gold" },
   { contest: "CCPC", event: "全国邀请赛", rank: "银牌", metal: "silver" },
 ];
-const palettes = {
-  light: { background: "#FCFDFF", tint: "#F1F4FC", border: "#DEE5F2", title: "#202B46", text: "#485975", blue: "#456FC3", ribbon: "#8DB1FF" },
-  dark: { background: "#101827", tint: "#19223B", border: "#2B3A55", title: "#EEF3FF", text: "#BAC7DD", blue: "#8DB1FF", ribbon: "#456FC3" },
-};
 const metals = {
   bronze: { fill: "#C88D60", light: "#975E31", dark: "#E3AE86" },
   silver: { fill: "#9BADBF", light: "#61748E", dark: "#B8CAE1" },
@@ -36,7 +33,8 @@ const medal = (x, y, metal, colors) => `<g transform="translate(${x} ${y})" aria
 </g>`;
 
 const render = (theme, mobile) => {
-  const colors = palettes[theme];
+  const dark = theme === "dark";
+  const colors = { ...palette(dark), ribbon: dark ? "#527AAE" : "#9FBEED" };
   const width = mobile ? 440 : 880;
   const height = mobile ? 400 : 188;
   const blocks = awards.map((award, index) => {
@@ -70,26 +68,12 @@ const render = (theme, mobile) => {
 </svg>\n`.replace(/[ \t]+\n/g, "\n");
 };
 
-const images = new Map();
 for (const theme of ["light", "dark"]) {
   for (const mobile of [false, true]) {
     const suffix = `${mobile ? "mobile-" : ""}${theme}`;
     const svg = render(theme, mobile);
-    const version = createHash("sha256").update(svg).digest("hex").slice(0, 10);
-    const filename = `competition-honors-${suffix}-${version}.svg`;
-    fs.writeFileSync(path.join(assets, filename), svg);
-    images.set(suffix, filename);
+    outputs.write(`assets/competition-honors-${suffix}.svg`, svg);
   }
 }
-const readmePath = path.join(root, "README.md");
-fs.writeFileSync(readmePath, fs.readFileSync(readmePath, "utf8").replace(
-  /assets\/competition-honors-((?:mobile-)?(?:light|dark))(?:-[a-f0-9]{10})?\.svg/g,
-  (_, suffix) => `assets/${images.get(suffix)}`,
-));
-const activeImages = new Set(images.values());
-for (const filename of fs.readdirSync(assets)) {
-  if (/^competition-honors-(?:mobile-)?(?:light|dark)(?:-[a-f0-9]{10})?\.svg$/.test(filename) && !activeImages.has(filename)) {
-    fs.unlinkSync(path.join(assets, filename));
-  }
-}
+outputs.finish();
 console.log("Generated competition honors for desktop/mobile and light/dark themes.");

@@ -1,10 +1,12 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { palette, versionedAssets } from "./profile-style.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const icons = path.join(root, "assets", "tool-icons");
 const output = path.join(root, "assets", "tool-badges");
+const outputs = versionedAssets(root);
 const tools = [
   ["python", "Python", ["python"]],
   ["pytorch", "PyTorch", ["pytorch"]],
@@ -33,13 +35,15 @@ for (const [id, label, iconIds] of tools) {
   const pictures = iconIds.map((icon, i) => `<g transform="translate(${6 + i * 24} 4) scale(0.6875)" aria-hidden="true">${shapes(icon)}</g>`).join("\n");
   for (const theme of ["light", "dark"]) {
     const dark = theme === "dark";
+    const colors = palette(dark);
     const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="30" viewBox="0 0 ${width} 30" fill="none" role="img" aria-labelledby="title">
   <title id="title">${xml(label)}</title>
-  <rect x="0.5" y="0.5" width="${width - 1}" height="29" rx="8" fill="${dark ? "#19223B" : "#F1F4FC"}" stroke="${dark ? "#2B3A55" : "#DEE5F2"}"/>
+  <rect x="0.5" y="0.5" width="${width - 1}" height="29" rx="8" fill="${colors.background}" stroke="${colors.border}"/>
   ${pictures}
-  <text x="${labelX}" y="19.5" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="13" font-weight="500" fill="${dark ? "#BAC7DD" : "#485975"}">${xml(label)}</text>
+  <text x="${labelX}" y="19.5" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="13" font-weight="500" fill="${colors.text}">${xml(label)}</text>
 </svg>\n`;
-    fs.writeFileSync(path.join(output, `${id}-${theme}.svg`), svg.replace(/[ \t]+\n/g, "\n"));
+    outputs.write(`assets/tool-badges/${id}-${theme}.svg`, svg.replace(/[ \t]+\n/g, "\n"));
   }
 }
+outputs.finish();
 console.log("Generated 12 tool badges in light and dark themes.");
