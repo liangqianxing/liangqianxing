@@ -10,7 +10,7 @@ const font = "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Mic
 const logo = (id) => fs.readFileSync(path.join(assets, "logos", `${id}.png`)).toString("base64");
 const items = [
   { id: "location", width: 108, title: "北京", color: "blue" },
-  { id: "meituan", width: 172, title: "美团", detail: "开发实习生", color: "cyan", logo: logo("meituan") },
+  { id: "meituan", width: 232, title: "美团", detail: "Agent 算法工程实习生", color: "cyan", logo: logo("meituan") },
   { id: "education", width: 308, title: "华东师范大学 · 软件工程", detail: "已保研录取 · 2027 年入学", color: "violet", logo: logo("ecnu") },
 ];
 

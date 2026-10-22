@@ -17,7 +17,7 @@
 
 <p>
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-status-location-dark-1c8a9da370.svg" /><img width="108" src="assets/profile-status-location-light-2b9abf728e.svg" alt="北京" /></picture>
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-status-meituan-dark-a8d58c5b90.svg" /><img width="172" src="assets/profile-status-meituan-light-3c0f3bd5a5.svg" alt="美团 · 开发实习生" /></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-status-meituan-dark-f10339cede.svg" /><img width="232" src="assets/profile-status-meituan-light-cbf74cdbf3.svg" alt="美团 · Agent 算法工程实习生" /></picture>
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-status-education-dark-47eff7b6ff.svg" /><img width="308" src="assets/profile-status-education-light-8e92fde973.svg" alt="华东师范大学 · 软件工程已保研录取（2027 年入学）" /></picture>
 </p>
 
@@ -40,10 +40,10 @@
 ### 03 / Journey · 教育与经历
 
 <picture>
-  <source media="(max-width: 1100px) and (prefers-color-scheme: dark)" srcset="assets/journey-mobile-dark-e07affff11.svg" />
-  <source media="(max-width: 1100px) and (prefers-color-scheme: light)" srcset="assets/journey-mobile-light-99254aa53d.svg" />
-  <source media="(prefers-color-scheme: dark)" srcset="assets/journey-dark-7ad709034e.svg" />
-  <img width="100%" src="assets/journey-light-77bb151e66.svg" alt="华东师范大学：软件工程已保研录取，2027–2030，2027 年入学；新疆大学：软件工程本科，2023–2027，曾于中南大学交换；美团：开发实习，2026.06 至今；西湖大学 NLP 实验室：访问学生，2025.12–2026.03" />
+  <source media="(max-width: 1100px) and (prefers-color-scheme: dark)" srcset="assets/journey-mobile-dark-f97e752dc7.svg" />
+  <source media="(max-width: 1100px) and (prefers-color-scheme: light)" srcset="assets/journey-mobile-light-8d8951161f.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="assets/journey-dark-f4d8fc85b1.svg" />
+  <img width="100%" src="assets/journey-light-171efff299.svg" alt="华东师范大学：软件工程已保研录取，2027–2030，2027 年入学；新疆大学：软件工程本科，2023–2027，曾于中南大学交换；美团：海外酒旅业务研发平台 · Agent 算法工程实习生，2026.06 至今；西湖大学 NLP 实验室：访问学生，2025.12–2026.03" />
 </picture>
 
 <details>
@@ -54,7 +54,7 @@
   | :--- | :--- |
   | 2027 - 2030 | **华东师范大学** · 软件工程，已保研录取，2027 年入学 |
   | 2023 - 2027 | **新疆大学** · 软件工程本科，曾于中南大学交换学习 |
-  | 2026.06 - 至今 | **美团** · 开发实习生，参与 Agent 任务编排、沙箱与工具调用链路 |
+  | 2026.06 - 至今 | **美团** · Agent 算法工程实习生，海外酒旅业务研发平台；参与任务分解与 DAG 调度、工具路由与上下文策略、Sandbox 执行与轨迹评测，以及 SFT / DPO 对齐 |
   | 2025.12 - 2026.03 | **西湖大学 NLP 实验室** · 访问学生，参与科研智能体研发 |
 </details>
 
