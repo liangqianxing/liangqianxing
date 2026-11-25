@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="112" height="62" viewBox="0 0 112 62" fill="none" role="img" aria-labelledby="title">
+  <title id="title">北京</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="112" y2="62" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0D1524"/>
+      <stop offset="1" stop-color="#121D30"/>
+    </linearGradient>
+  </defs>
+  <rect x="0.75" y="0.75" width="110.5" height="60.5" rx="14" fill="url(#bg)" stroke="#263752" stroke-width="1.2"/>
+  <rect x="1" y="16" width="3" height="30" rx="1.5" fill="#7FB0FA" fill-opacity="0.75"/>
+  <rect x="13" y="14" width="34" height="34" rx="10" fill="#7FB0FA" fill-opacity="0.1" stroke="#7FB0FA" stroke-opacity="0.22"/><g transform="translate(18 19)" stroke="#7FB0FA" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-7 8-13a8 8 0 0 0-16 0c0 6 8 13 8 13Z"/><circle cx="12" cy="9" r="2.5"/></g>
+  <text x="57" y="37" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="16.5" font-weight="650" fill="#F4F7FC">北京</text>
+
+</svg>

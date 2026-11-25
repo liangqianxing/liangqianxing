@@ -30,17 +30,23 @@ const shapes = (id) => fs.readFileSync(path.join(icons, `${id}.svg`), "utf8")
 
 fs.mkdirSync(output, { recursive: true });
 for (const [id, label, iconIds] of tools) {
-  const labelX = 8 + iconIds.length * 24;
-  const width = Math.ceil(labelX + label.length * 7.8 + 10);
-  const pictures = iconIds.map((icon, i) => `<g transform="translate(${6 + i * 24} 4) scale(0.6875)" aria-hidden="true">${shapes(icon)}</g>`).join("\n");
+  const labelX = 10 + iconIds.length * 24;
+  const width = Math.ceil(labelX + label.length * 7.8 + 12);
+  const pictures = iconIds.map((icon, i) => `<g transform="translate(${7 + i * 24} 5) scale(0.6875)" aria-hidden="true">${shapes(icon)}</g>`).join("\n");
   for (const theme of ["light", "dark"]) {
     const dark = theme === "dark";
     const colors = palette(dark);
-    const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="30" viewBox="0 0 ${width} 30" fill="none" role="img" aria-labelledby="title">
+    const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="32" viewBox="0 0 ${width} 32" fill="none" role="img" aria-labelledby="title">
   <title id="title">${xml(label)}</title>
-  <rect x="0.5" y="0.5" width="${width - 1}" height="29" rx="8" fill="${colors.background}" stroke="${colors.border}"/>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="${width}" y2="32" gradientUnits="userSpaceOnUse">
+      <stop stop-color="${colors.background}"/>
+      <stop offset="1" stop-color="${colors.surface}"/>
+    </linearGradient>
+  </defs>
+  <rect x="0.6" y="0.6" width="${width - 1.2}" height="30.8" rx="9" fill="url(#bg)" stroke="${colors.border}" stroke-width="1.1"/>
   ${pictures}
-  <text x="${labelX}" y="19.5" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="13" font-weight="500" fill="${colors.text}">${xml(label)}</text>
+  <text x="${labelX}" y="20.5" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="12.8" font-weight="550" fill="${colors.text}">${xml(label)}</text>
 </svg>\n`;
     outputs.write(`assets/tool-badges/${id}-${theme}.svg`, svg.replace(/[ \t]+\n/g, "\n"));
   }

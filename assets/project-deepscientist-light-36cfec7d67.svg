@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="214" viewBox="0 0 440 214" fill="none" role="img" aria-labelledby="title description">
+  <title id="title">DeepScientist</title>
+  <desc id="description">RESEARCH AGENT / CONTRIBUTOR. 科研智能体平台 · Copilot / Autonomous。MCP 工具接入与 Agent 运行轨迹</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="440" y2="214" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FCFDFF"/>
+      <stop offset="1" stop-color="#F6F9FC"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#285EA8"/>
+      <stop offset="0.55" stop-color="#1C747E"/>
+      <stop offset="1" stop-color="#1C747E"/>
+    </linearGradient>
+    <clipPath id="shell-clip"><rect x="1" y="1" width="438" height="212" rx="18"/></clipPath>
+
+
+    <radialGradient id="card-glow" cx="0.88" cy="0.14" r="0.58">
+      <stop stop-color="#285EA8" stop-opacity="0.09"/>
+      <stop offset="1" stop-color="#285EA8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="top-bar" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#285EA8" stop-opacity="0.85"/>
+      <stop offset="0.7" stop-color="#285EA8" stop-opacity="0.25"/>
+      <stop offset="1" stop-color="#285EA8" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g clip-path="url(#shell-clip)">
+    <rect x="0" y="0" width="440" height="214" fill="url(#background)"/>
+
+
+    <rect width="440" height="214" fill="url(#card-glow)"/>
+    <rect x="24" y="0" width="392" height="3" rx="1.5" fill="url(#top-bar)"/>
+    <text x="24" y="38" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="10.5" font-weight="650" letter-spacing="0.4" text-anchor="start" fill="#285EA8">RESEARCH AGENT / CONTRIBUTOR</text>
+    <text x="23" y="78" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="26.5" font-weight="750" letter-spacing="-0.6" text-anchor="start" fill="#142238">DeepScientist</text>
+
+  <rect x="362" y="22" width="52" height="52" rx="14" fill="#285EA8" fill-opacity="0.09" stroke="#285EA8" stroke-opacity="0.2"/>
+  <g transform="translate(370 30) scale(0.66)" stroke="#285EA8" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"><rect x="20" y="20" width="14" height="14" rx="4"/><circle cx="10" cy="10" r="4"/><circle cx="44" cy="10" r="4"/><circle cx="10" cy="44" r="4"/><circle cx="44" cy="44" r="4"/><path d="m13 13 8 8m12 0 8-8M13 41l8-8m12 0 8 8"/></g>
+    <text x="24" y="118" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="15" font-weight="450" letter-spacing="0" text-anchor="start" fill="#3B4F69">科研智能体平台 · Copilot / Autonomous</text>
+<text x="24" y="142" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="15" font-weight="450" letter-spacing="0" text-anchor="start" fill="#3B4F69">MCP 工具接入与 Agent 运行轨迹</text>
+    <path d="M24 162h392" stroke="#E4ECF5"/>
+    <circle cx="29" cy="185" r="3.2" fill="#285EA8"/>
+    <text x="41" y="189" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" font-weight="550" letter-spacing="0" text-anchor="start" fill="#607590">AI4Science · Agent Systems</text>
+    <rect x="388" y="172" width="28" height="24" rx="8" fill="#285EA8" fill-opacity="0.1"/>
+    <text x="402" y="189" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="15" font-weight="700" letter-spacing="0" text-anchor="middle" fill="#285EA8">↗</text>
+  </g>
+  <rect x="0.75" y="0.75" width="438.5" height="212.5" rx="18" stroke="#D5E0EC" stroke-width="1.2"/>
+  <path d="M20 1.35h400" stroke="#FFFFFF" stroke-opacity="0.7" stroke-width="1"/>
+</svg>
